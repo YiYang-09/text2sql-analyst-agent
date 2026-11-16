@@ -1,0 +1,681 @@
+# Benchmark questions for the EU lorry database.
+#
+# split:      dev  = few-shot example pool (never scored)
+#             test = scored questions
+# difficulty: easy | medium | hard
+# skills:     lookup, filter, aggregation, ranking, join, window, multi_step, fuel_hierarchy,
+#             trap_aggregate (EU27 aggregate row), trap_null (missing is not zero / partial year),
+#             unanswerable (the honest answer is NULL / not available)
+# sql:        gold SQL. Its result is the gold answer (see evaluation/compare.py for the matching rules).
+# order_matters: true only when the question asks for an ordered list.
+
+# ----------------------------------------------------------------------------------------------
+# dev (few-shot pool)
+# ----------------------------------------------------------------------------------------------
+- id: d01
+  split: dev
+  difficulty: easy
+  skills: [lookup]
+  question: How many new battery-electric lorries were registered in Germany in 2023?
+  sql: select new_electric from metrics_country_year where geo = 'DE' and year = 2023
+
+- id: d02
+  split: dev
+  difficulty: easy
+  skills: [filter]
+  question: Which countries in the data are Nordic countries?
+  sql: select geo from dim_country where is_nordic
+
+- id: d03
+  split: dev
+  difficulty: medium
+  skills: [filter]
+  question: What was the EU27 electric share of new lorries in each year from 2019 to 2024?
+  sql: select year, new_electric_share from metrics_eu27_year where year between 2019 and 2024 order by year
+
+- id: d04
+  split: dev
+  difficulty: medium
+  skills: [ranking, join, trap_aggregate]
+  question: Which 3 EU27 member states had the most battery-electric lorries in use in 2023, and how many?
+  sql: |
+    select m.geo, m.stock_electric
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_eu27 and m.year = 2023 and m.stock_electric is not null
+    order by m.stock_electric desc limit 3
+
+- id: d05
+  split: dev
+  difficulty: medium
+  skills: [fuel_hierarchy]
+  question: How many new diesel lorries, excluding hybrids, were registered in France in 2022?
+  sql: select units from fct_new_lorries_bi where geo = 'FR' and year = 2022 and mot_nrg = 'DIE_X_HYB'
+
+- id: d06
+  split: dev
+  difficulty: medium
+  skills: [join]
+  question: For each Nordic country, what was the electric share of new lorries in 2024?
+  sql: |
+    select m.geo, m.new_electric_share
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_nordic and m.year = 2024
+
+- id: d07
+  split: dev
+  difficulty: medium
+  skills: [aggregation]
+  question: In which year did Sweden first register at least 100 new battery-electric lorries?
+  sql: select min(year) from metrics_country_year where geo = 'SE' and new_electric >= 100
+
+- id: d08
+  split: dev
+  difficulty: hard
+  skills: [window, join]
+  question: Which EU27 member state had the largest increase in new battery-electric lorries from 2023 to 2024, in units?
+  sql: |
+    select a.geo
+    from metrics_country_year a
+    join metrics_country_year b on b.geo = a.geo and b.year = 2023
+    join dim_country c on c.geo = a.geo
+    where a.year = 2024 and c.is_eu27
+    order by a.new_electric - b.new_electric desc nulls last
+    limit 1
+
+- id: d09
+  split: dev
+  difficulty: easy
+  skills: [lookup]
+  question: What does the Eurostat flag 'p' mean?
+  sql: select meaning from dim_flag where flag = 'p'
+
+- id: d10
+  split: dev
+  difficulty: hard
+  skills: [aggregation, trap_aggregate, trap_null]
+  question: How many new lorries were registered in total across all individual countries in the data in 2023?
+  sql: |
+    select sum(new_total)
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2023 and not c.is_aggregate
+
+# ----------------------------------------------------------------------------------------------
+# test: easy
+# ----------------------------------------------------------------------------------------------
+- id: t01
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many new lorries were registered in Spain in 2024?
+  sql: select new_total from metrics_country_year where geo = 'ES' and year = 2024
+
+- id: t02
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many battery-electric lorries were in use in the Netherlands in 2024?
+  sql: select stock_electric from metrics_country_year where geo = 'NL' and year = 2024
+
+- id: t03
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: What was Denmark's electric share of new lorries in 2024?
+  sql: select new_electric_share from metrics_country_year where geo = 'DK' and year = 2024
+
+- id: t04
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many new battery-electric lorries were registered in the EU27 in 2022?
+  sql: select new_electric from metrics_eu27_year where year = 2022
+
+- id: t05
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: What was the electric share of lorries in use in the EU27 in 2024?
+  sql: select stock_electric_share from metrics_eu27_year where year = 2024
+
+- id: t06
+  split: test
+  difficulty: easy
+  skills: [aggregation]
+  question: How many EU27 member states are in the country table?
+  sql: select count(*) from dim_country where is_eu27
+
+- id: t07
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: Which geo code does the data use for Greece?
+  sql: select geo from dim_country where country_name = 'Greece'
+
+- id: t08
+  split: test
+  difficulty: easy
+  skills: [filter, fuel_hierarchy]
+  question: List the fuel codes that are at the leaf level of the fuel hierarchy.
+  sql: select mot_nrg from dim_fuel where fuel_level = 'leaf'
+
+- id: t09
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many new lorries were registered in Poland in 2020?
+  sql: select new_total from metrics_country_year where geo = 'PL' and year = 2020
+
+- id: t10
+  split: test
+  difficulty: easy
+  skills: [filter]
+  question: Which years does the data cover?
+  sql: select year from dim_year order by year
+
+- id: t11
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: What was Norway's electric share of new lorries in 2025?
+  sql: select new_electric_share from metrics_country_year where geo = 'NO' and year = 2025
+
+- id: t12
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many new battery-electric lorries were registered in Germany in 2025?
+  sql: select new_electric from metrics_country_year where geo = 'DE' and year = 2025
+
+- id: t13
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many lorries of all fuel types were in use in Italy in 2023?
+  sql: select stock_total from metrics_country_year where geo = 'IT' and year = 2023
+
+- id: t14
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many lorries were in use in the EU27 in 2015?
+  sql: select stock_total from metrics_eu27_year where year = 2015
+
+- id: t15
+  split: test
+  difficulty: easy
+  skills: [filter]
+  question: Which Nordic countries are not EU27 member states?
+  sql: select geo from dim_country where is_nordic and not is_eu27
+
+- id: t16
+  split: test
+  difficulty: easy
+  skills: [lookup, fuel_hierarchy]
+  question: How many new natural gas lorries (fuel code GAS) were registered in Italy in 2024?
+  sql: select units from fct_new_lorries_bi where geo = 'IT' and year = 2024 and mot_nrg = 'GAS'
+
+- id: t17
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: What was the year-on-year growth rate of new battery-electric lorries in Germany in 2024?
+  sql: select new_electric_yoy from metrics_country_year where geo = 'DE' and year = 2024
+
+- id: t18
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many new lorries were registered in Switzerland in 2019?
+  sql: select new_total from metrics_country_year where geo = 'CH' and year = 2019
+
+- id: t19
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: What was the electric share of new lorries in Sweden in 2021?
+  sql: select new_electric_share from metrics_country_year where geo = 'SE' and year = 2021
+
+- id: t20
+  split: test
+  difficulty: easy
+  skills: [lookup]
+  question: How many new battery-electric lorries were registered in France in 2024?
+  sql: select new_electric from metrics_country_year where geo = 'FR' and year = 2024
+
+# ----------------------------------------------------------------------------------------------
+# test: medium
+# ----------------------------------------------------------------------------------------------
+- id: t21
+  split: test
+  difficulty: medium
+  skills: [ranking, trap_aggregate]
+  question: Which country registered the most new battery-electric lorries in 2024?
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2024 and not c.is_aggregate
+    order by m.new_electric desc nulls last limit 1
+
+- id: t22
+  split: test
+  difficulty: medium
+  skills: [ranking, join, trap_aggregate]
+  question: List the top 5 EU27 member states by new battery-electric lorries in 2024, with their counts.
+  sql: |
+    select m.geo, m.new_electric
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2024 and c.is_eu27
+    order by m.new_electric desc nulls last limit 5
+
+- id: t23
+  split: test
+  difficulty: medium
+  skills: [ranking, join]
+  question: Which EU27 member state had the highest electric share of new lorries in 2024?
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2024 and c.is_eu27
+    order by m.new_electric_share desc nulls last limit 1
+
+- id: t24
+  split: test
+  difficulty: medium
+  skills: [multi_step]
+  question: What share of the EU27's new battery-electric lorries in 2024 were registered in Germany?
+  sql: |
+    select m.new_electric::double / e.new_electric
+    from metrics_country_year m join metrics_eu27_year e using (year)
+    where m.geo = 'DE' and m.year = 2024
+
+- id: t25
+  split: test
+  difficulty: medium
+  skills: [aggregation, join]
+  question: How many new battery-electric lorries were registered in total across the Nordic countries in 2024?
+  sql: |
+    select sum(m.new_electric)
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_nordic and m.year = 2024
+
+- id: t26
+  split: test
+  difficulty: medium
+  skills: [aggregation, join]
+  question: In how many EU27 member states were at least 5% of new lorries battery-electric in 2024?
+  sql: |
+    select count(*)
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_eu27 and m.year = 2024 and m.new_electric_share >= 0.05
+
+- id: t27
+  split: test
+  difficulty: medium
+  skills: [ranking]
+  question: Between 2013 and 2024, in which year were the most new lorries registered in the EU27?
+  sql: select year from metrics_eu27_year where year between 2013 and 2024 order by new_total desc limit 1
+
+- id: t28
+  split: test
+  difficulty: medium
+  skills: [aggregation]
+  question: How many new battery-electric lorries were registered in Germany in total from 2019 to 2024?
+  sql: select sum(new_electric) from metrics_country_year where geo = 'DE' and year between 2019 and 2024
+
+- id: t29
+  split: test
+  difficulty: medium
+  skills: [aggregation, join, trap_null]
+  question: What was the unweighted average of the EU27 member states' electric shares of new lorries in 2024 (each country counts once)?
+  sql: |
+    select avg(m.new_electric_share)
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_eu27 and m.year = 2024
+
+- id: t30
+  split: test
+  difficulty: medium
+  skills: [join, trap_null]
+  question: Which EU27 member states have no new lorry registration total reported for 2025?
+  sql: |
+    select c.geo
+    from dim_country c
+    left join metrics_country_year m on m.geo = c.geo and m.year = 2025
+    where c.is_eu27 and m.new_total is null
+
+- id: t31
+  split: test
+  difficulty: medium
+  skills: [fuel_hierarchy]
+  question: How many new petrol lorries, including petrol hybrids, were registered in Germany in 2024?
+  sql: select units from fct_new_lorries_bi where geo = 'DE' and year = 2024 and mot_nrg = 'PET'
+
+- id: t32
+  split: test
+  difficulty: medium
+  skills: [fuel_hierarchy, multi_step]
+  question: What share of Germany's new lorries in 2024 were diesel excluding hybrids?
+  sql: |
+    select d.units::double / t.units
+    from fct_new_lorries_bi d join fct_new_lorries_bi t using (geo, year)
+    where d.geo = 'DE' and d.year = 2024 and d.mot_nrg = 'DIE_X_HYB' and t.mot_nrg = 'TOTAL'
+
+- id: t33
+  split: test
+  difficulty: medium
+  skills: [ranking, join, trap_aggregate]
+  question: Among countries outside the EU27 with at least 1,000 new lorries in 2024, which had the highest electric share of new lorries?
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2024 and not c.is_eu27 and not c.is_aggregate and m.new_total >= 1000
+    order by m.new_electric_share desc nulls last limit 1
+
+- id: t34
+  split: test
+  difficulty: medium
+  skills: [ranking, join]
+  question: Rank the Nordic countries by electric share of new lorries in 2024, from highest to lowest.
+  order_matters: true
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_nordic and m.year = 2024
+    order by m.new_electric_share desc
+
+- id: t35
+  split: test
+  difficulty: medium
+  skills: [aggregation, join, trap_null]
+  question: How many EU27 member states registered zero new battery-electric lorries in 2019 (a reported zero, not a missing value)?
+  sql: |
+    select count(*)
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_eu27 and m.year = 2019 and m.new_electric = 0
+
+- id: t36
+  split: test
+  difficulty: medium
+  skills: [unanswerable, trap_null]
+  question: What was the EU27 electric share of new lorries in 2025?
+  sql: select new_electric_share from metrics_eu27_year where year = 2025
+  notes: Not available. 2025 is incomplete (25 of 27 countries), so the EU27 value is NULL.
+
+- id: t37
+  split: test
+  difficulty: medium
+  skills: [aggregation, join]
+  question: Using only country-years whose fuel mix is usable, which fuel group other than diesel had the most new lorries in 2024?
+  sql: |
+    select f.fuel_group
+    from fuel_mix_new f join fuel_mix_quality q using (geo, year)
+    where f.year = 2024 and q.is_usable_for_mix and f.fuel_group <> 'Diesel'
+    group by f.fuel_group
+    order by sum(f.units) desc limit 1
+
+- id: t38
+  split: test
+  difficulty: medium
+  skills: [multi_step]
+  question: How many times more new battery-electric lorries did the EU27 register in 2024 than in 2019?
+  sql: |
+    select a.new_electric::double / b.new_electric
+    from metrics_eu27_year a, metrics_eu27_year b
+    where a.year = 2024 and b.year = 2019
+
+- id: t39
+  split: test
+  difficulty: medium
+  skills: [aggregation]
+  question: How many countries have new lorry data flagged as low reliability in 2024?
+  sql: select count(*) from metrics_country_year where year = 2024 and new_low_reliability
+
+- id: t40
+  split: test
+  difficulty: medium
+  skills: [ranking, trap_aggregate]
+  question: Which three countries had the most battery-electric lorries in use in 2024?
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2024 and not c.is_aggregate
+    order by m.stock_electric desc nulls last limit 3
+
+- id: t41
+  split: test
+  difficulty: medium
+  skills: [aggregation, join]
+  question: How many new lorries were registered in 2024 in total in the Nordic countries that are EU27 members?
+  sql: |
+    select sum(m.new_total)
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_nordic and c.is_eu27 and m.year = 2024
+
+- id: t42
+  split: test
+  difficulty: medium
+  skills: [ranking, join]
+  question: Among EU27 member states with at least 10,000 new lorries in 2024, which had the lowest electric share of new lorries?
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_eu27 and m.year = 2024 and m.new_total >= 10000
+    order by m.new_electric_share asc limit 1
+
+- id: t43
+  split: test
+  difficulty: medium
+  skills: [filter]
+  question: How many new battery-electric lorries were registered in France in each year from 2020 to 2024?
+  sql: select year, new_electric from metrics_country_year where geo = 'FR' and year between 2020 and 2024
+
+- id: t44
+  split: test
+  difficulty: medium
+  skills: [ranking]
+  question: Which country had the highest year-on-year growth rate of new battery-electric lorries in 2024, according to the growth rate defined in the data?
+  sql: |
+    select geo from metrics_country_year
+    where year = 2024 and new_electric_yoy is not null
+    order by new_electric_yoy desc limit 1
+
+- id: t45
+  split: test
+  difficulty: medium
+  skills: [ranking, trap_aggregate]
+  question: Which country had the most lorries of all fuel types in use in 2024?
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2024 and not c.is_aggregate
+    order by m.stock_total desc nulls last limit 1
+
+# ----------------------------------------------------------------------------------------------
+# test: hard
+# ----------------------------------------------------------------------------------------------
+- id: t46
+  split: test
+  difficulty: hard
+  skills: [window, join]
+  question: Which EU27 member state's electric share of new lorries rose the most, in percentage points, from 2023 to 2024?
+  sql: |
+    select a.geo
+    from metrics_country_year a
+    join metrics_country_year b on b.geo = a.geo and b.year = 2023
+    join dim_country c on c.geo = a.geo
+    where a.year = 2024 and c.is_eu27
+    order by a.new_electric_share - b.new_electric_share desc nulls last
+    limit 1
+
+- id: t47
+  split: test
+  difficulty: hard
+  skills: [aggregation, join]
+  question: For each EU27 member state whose electric share of new lorries has ever exceeded 1%, in which year did it first exceed 1%?
+  sql: |
+    select m.geo, min(m.year)
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_eu27 and m.new_electric_share > 0.01
+    group by m.geo
+
+- id: t48
+  split: test
+  difficulty: hard
+  skills: [aggregation, trap_aggregate, trap_null]
+  question: How many new lorries were registered in total across all individual countries in the data in 2024?
+  sql: |
+    select sum(m.new_total)
+    from metrics_country_year m join dim_country c using (geo)
+    where m.year = 2024 and not c.is_aggregate
+
+- id: t49
+  split: test
+  difficulty: hard
+  skills: [window, join, trap_aggregate]
+  question: Which countries registered fewer new battery-electric lorries in 2025 than in 2024?
+  sql: |
+    select a.geo
+    from metrics_country_year a
+    join metrics_country_year b on b.geo = a.geo and b.year = 2024
+    join dim_country c on c.geo = a.geo
+    where a.year = 2025 and not c.is_aggregate and a.new_electric < b.new_electric
+
+- id: t50
+  split: test
+  difficulty: hard
+  skills: [multi_step, join]
+  question: Which EU27 member states had an electric share of new lorries above the EU27 overall share in 2024?
+  sql: |
+    select m.geo
+    from metrics_country_year m
+    join dim_country c using (geo)
+    join metrics_eu27_year e on e.year = m.year
+    where m.year = 2024 and c.is_eu27 and m.new_electric_share > e.new_electric_share
+
+- id: t51
+  split: test
+  difficulty: hard
+  skills: [multi_step, join]
+  question: What share of the EU27's new battery-electric lorries came from Germany in each year from 2019 to 2024?
+  sql: |
+    select m.year, m.new_electric::double / e.new_electric
+    from metrics_country_year m join metrics_eu27_year e using (year)
+    where m.geo = 'DE' and m.year between 2019 and 2024
+
+- id: t52
+  split: test
+  difficulty: hard
+  skills: [fuel_hierarchy, multi_step]
+  question: In 2024, what share of new lorries in the Netherlands used a fuel other than diesel excluding hybrids?
+  sql: |
+    select 1 - d.units::double / t.units
+    from fct_new_lorries_bi d join fct_new_lorries_bi t using (geo, year)
+    where d.geo = 'NL' and d.year = 2024 and d.mot_nrg = 'DIE_X_HYB' and t.mot_nrg = 'TOTAL'
+
+- id: t53
+  split: test
+  difficulty: hard
+  skills: [window]
+  question: In which year did EU27 new battery-electric registrations grow the most in absolute terms compared with the previous year?
+  sql: |
+    select year from (
+      select year, new_electric - lag(new_electric) over (order by year) as diff
+      from metrics_eu27_year
+    ) where diff is not null
+    order by diff desc limit 1
+
+- id: t54
+  split: test
+  difficulty: hard
+  skills: [multi_step]
+  question: What was the compound annual growth rate of EU27 new battery-electric lorry registrations from 2019 to 2024?
+  sql: |
+    select power(a.new_electric::double / b.new_electric, 1.0 / 5) - 1
+    from metrics_eu27_year a, metrics_eu27_year b
+    where a.year = 2024 and b.year = 2019
+
+- id: t55
+  split: test
+  difficulty: hard
+  skills: [aggregation]
+  question: How many new battery-electric lorries were registered in the EU27 in total over 2013 to 2024?
+  sql: select sum(new_electric) from metrics_eu27_year where year between 2013 and 2024
+
+- id: t56
+  split: test
+  difficulty: hard
+  skills: [aggregation, join]
+  question: In 2024, how many new battery-electric lorries were registered in Nordic EU27 members and how many in Nordic countries outside the EU27?
+  sql: |
+    select sum(m.new_electric) filter (where c.is_eu27) as nordic_eu27,
+           sum(m.new_electric) filter (where not c.is_eu27) as nordic_non_eu27
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_nordic and m.year = 2024
+
+- id: t57
+  split: test
+  difficulty: hard
+  skills: [ranking, join, multi_step]
+  question: Among EU27 member states with at least 1,000 new lorries in 2024 and a usable fuel mix, which had the highest share of gas lorries (fuel group Gas) among new lorries?
+  sql: |
+    select f.geo
+    from fuel_mix_new f
+    join fuel_mix_quality q using (geo, year)
+    join dim_country c using (geo)
+    where f.year = 2024 and f.fuel_group = 'Gas' and q.is_usable_for_mix and c.is_eu27 and q.total_units >= 1000
+    order by f.units::double / q.total_units desc limit 1
+
+- id: t58
+  split: test
+  difficulty: hard
+  skills: [join, multi_step]
+  question: For Denmark, Sweden and Germany in 2024, what was the electric share of new lorries and the electric share of lorries in use?
+  sql: |
+    select geo, new_electric_share, stock_electric_share
+    from metrics_country_year
+    where year = 2024 and geo in ('DK', 'SE', 'DE')
+
+- id: t59
+  split: test
+  difficulty: hard
+  skills: [window]
+  question: In which year did the EU27 electric share of new lorries first exceed 1%?
+  sql: select min(year) from metrics_eu27_year where new_electric_share > 0.01
+
+- id: t60
+  split: test
+  difficulty: hard
+  skills: [multi_step]
+  question: In 2024, how many new lorries were registered in the EU27 for every 100 lorries in use?
+  sql: select 100.0 * new_total / stock_total from metrics_eu27_year where year = 2024
+
+- id: t61
+  split: test
+  difficulty: hard
+  skills: [ranking, join, multi_step]
+  question: Which EU27 member state had the highest ratio of new lorries to lorries in use in 2024?
+  sql: |
+    select m.geo
+    from metrics_country_year m join dim_country c using (geo)
+    where c.is_eu27 and m.year = 2024
+    order by m.new_total::double / m.stock_total desc nulls last limit 1
+
+- id: t62
+  split: test
+  difficulty: hard
+  skills: [window, join]
+  question: Which countries registered at least 50 fewer new battery-electric lorries in 2024 than in 2023?
+  sql: |
+    select a.geo
+    from metrics_country_year a
+    join metrics_country_year b on b.geo = a.geo and b.year = 2023
+    join dim_country c on c.geo = a.geo
+    where a.year = 2024 and not c.is_aggregate and b.new_electric - a.new_electric >= 50
+
+- id: t63
+  split: test
+  difficulty: hard
+  skills: [unanswerable, trap_null]
+  question: How many battery-electric lorries were in use in the EU27 in 2025?
+  sql: select stock_electric from metrics_eu27_year where year = 2025
+  notes: Not available. Only 20 of 27 countries reported lorries in use for 2025.

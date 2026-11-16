@@ -1,0 +1,17 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_db.py
+      - run: python -m pytest -q
+      - name: Evaluation pipeline check (scripted oracle, must score 100%)
+        run: |
+          python -m evaluation.run_eval --provider oracle --name ci_oracle
+          python -c "import json; s=json.load(open('runs/ci_oracle/summary.json')); assert s['execution_accuracy']==1.0, s"

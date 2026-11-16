@@ -1,0 +1,6 @@
+flag,meaning
+b,Break in time series
+e,Estimated
+i,See metadata (Eurostat: low reliability for these tables)
+m,Missing value; data cannot exist
+p,Provisional

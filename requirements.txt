@@ -1,0 +1,6 @@
+duckdb>=1.1
+pyyaml>=6.0
+matplotlib>=3.8
+openai>=1.40      # OpenAI-compatible providers: Ollama, DeepSeek, Gemini, Groq, ...
+anthropic>=0.40   # Claude
+pytest>=8.0

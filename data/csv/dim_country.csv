@@ -1,0 +1,44 @@
+geo,country_name,is_aggregate,is_eu27,is_nordic,iso2
+EU27_2020,European Union - 27 countries (from 2020),true,false,false,EU27_2020
+BE,Belgium,false,true,false,BE
+BG,Bulgaria,false,true,false,BG
+CZ,Czechia,false,true,false,CZ
+DK,Denmark,false,true,true,DK
+DE,Germany,false,true,false,DE
+EE,Estonia,false,true,false,EE
+IE,Ireland,false,true,false,IE
+EL,Greece,false,true,false,GR
+ES,Spain,false,true,false,ES
+FR,France,false,true,false,FR
+HR,Croatia,false,true,false,HR
+IT,Italy,false,true,false,IT
+CY,Cyprus,false,true,false,CY
+LV,Latvia,false,true,false,LV
+LT,Lithuania,false,true,false,LT
+LU,Luxembourg,false,true,false,LU
+HU,Hungary,false,true,false,HU
+MT,Malta,false,true,false,MT
+NL,Netherlands,false,true,false,NL
+AT,Austria,false,true,false,AT
+PL,Poland,false,true,false,PL
+PT,Portugal,false,true,false,PT
+RO,Romania,false,true,false,RO
+SI,Slovenia,false,true,false,SI
+SK,Slovakia,false,true,false,SK
+FI,Finland,false,true,true,FI
+SE,Sweden,false,true,true,SE
+IS,Iceland,false,false,true,IS
+LI,Liechtenstein,false,false,false,LI
+NO,Norway,false,false,true,NO
+CH,Switzerland,false,false,false,CH
+UK,United Kingdom,false,false,false,GB
+BA,Bosnia and Herzegovina,false,false,false,BA
+ME,Montenegro,false,false,false,ME
+GE,Georgia,false,false,false,GE
+AL,Albania,false,false,false,AL
+RS,Serbia,false,false,false,RS
+TR,Türkiye,false,false,false,TR
+UA,Ukraine,false,false,false,UA
+XK,Kosovo*,false,false,false,XK
+MD,Moldova,false,false,false,MD
+MK,North Macedonia,false,false,false,MK

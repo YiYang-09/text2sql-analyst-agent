@@ -1,0 +1,2891 @@
+geo,year,fuel_group,units
+BA,2023,Other alternative,0
+BE,2015,Other alternative,0
+CH,2020,Other alternative,18
+EL,2023,Other alternative,0
+FR,2024,Other alternative,1287
+GE,2023,Other alternative,0
+HU,2021,Other alternative,0
+LV,2016,Other alternative,0
+ME,2022,Other alternative,0
+MT,2019,Other alternative,0
+NO,2018,Other alternative,1
+PT,2018,Other alternative,1
+XK,2017,Other alternative,0
+XK,2022,Other alternative,0
+NL,2013,Other alternative,6
+NL,2025,Other alternative,1
+XK,2025,Other alternative,0
+AT,2017,Diesel,3948
+BA,2014,Diesel,88
+CY,2017,Diesel,74
+CY,2025,Diesel,136
+DE,2017,Diesel,42416
+DE,2021,Diesel,34108
+DK,2024,Diesel,1917
+EE,2021,Diesel,237
+GE,2024,Diesel,1150
+IE,2019,Diesel,1034
+LI,2024,Diesel,27
+ME,2020,Diesel,46
+MT,2022,Diesel,32
+SE,2018,Diesel,5972
+XK,2024,Diesel,2920
+AT,2020,Battery electric,0
+BA,2020,Battery electric,0
+BG,2020,Battery electric,0
+BG,2022,Battery electric,0
+BG,2023,Battery electric,0
+CH,2023,Battery electric,318
+EE,2019,Battery electric,0
+EE,2020,Battery electric,0
+EE,2022,Battery electric,1
+EL,2018,Battery electric,0
+EL,2024,Battery electric,5
+FI,2019,Battery electric,0
+FI,2024,Battery electric,63
+FR,2013,Battery electric,3
+HR,2025,Battery electric,2
+HU,2018,Battery electric,0
+HU,2022,Battery electric,2
+IT,2016,Battery electric,1
+LV,2014,Battery electric,0
+LV,2024,Battery electric,4
+NL,2014,Battery electric,5
+NL,2020,Battery electric,24
+PL,2013,Battery electric,0
+PL,2020,Battery electric,0
+PT,2015,Battery electric,0
+RO,2016,Battery electric,0
+RO,2025,Battery electric,27
+SE,2016,Battery electric,0
+SE,2024,Battery electric,388
+SI,2014,Battery electric,0
+XK,2021,Battery electric,0
+AT,2017,Diesel hybrid,0
+BA,2014,Diesel hybrid,0
+CY,2017,Diesel hybrid,0
+CY,2025,Diesel hybrid,0
+DE,2017,Diesel hybrid,4
+DE,2021,Diesel hybrid,1
+DK,2024,Diesel hybrid,0
+EE,2021,Diesel hybrid,0
+GE,2024,Diesel hybrid,0
+LI,2024,Diesel hybrid,0
+MT,2022,Diesel hybrid,0
+SE,2018,Diesel hybrid,5
+XK,2024,Diesel hybrid,0
+AT,2016,Petrol hybrid,0
+CH,2015,Petrol hybrid,0
+CH,2022,Petrol hybrid,0
+DE,2019,Petrol hybrid,0
+DE,2020,Petrol hybrid,1
+ES,2021,Petrol hybrid,0
+ES,2024,Petrol hybrid,0
+FR,2022,Petrol hybrid,1
+HR,2019,Petrol hybrid,0
+HU,2019,Petrol hybrid,0
+HU,2020,Petrol hybrid,0
+IS,2023,Petrol hybrid,0
+IS,2024,Petrol hybrid,0
+LI,2022,Petrol hybrid,0
+LV,2025,Petrol hybrid,0
+ME,2025,Petrol hybrid,0
+MT,2024,Petrol hybrid,0
+PT,2025,Petrol hybrid,0
+SI,2023,Petrol hybrid,0
+TR,2020,Petrol hybrid,0
+UA,2022,Petrol hybrid,0
+UK,2017,Petrol hybrid,0
+BA,2017,Gas,0
+BE,2016,Gas,26
+CY,2013,Gas,0
+CY,2016,Gas,0
+EE,2014,Gas,0
+ES,2014,Gas,8
+FI,2021,Gas,96
+GE,2025,Gas,0
+IE,2018,Gas,1
+IT,2020,Gas,62
+LI,2015,Gas,0
+LT,2019,Gas,0
+LV,2021,Gas,19
+NL,2024,Gas,12
+NO,2021,Gas,111
+PL,2024,Gas,163
+SE,2015,Gas,58
+TR,2018,Gas,1
+UA,2020,Gas,0
+UA,2021,Gas,0
+UK,2021,Gas,23
+UK,2023,Gas,61
+FR,2016,Other alternative,17
+IT,2018,Other alternative,1
+HR,2016,Other alternative,10
+LT,2014,Other alternative,2
+BE,2014,Petrol,2
+BE,2020,Petrol,23
+CH,2017,Petrol,7
+CY,2019,Petrol,0
+CZ,2024,Petrol,0
+DE,2018,Petrol,34
+DK,2025,Petrol,0
+FI,2022,Petrol,100
+GE,2022,Petrol,3
+HU,2017,Petrol,0
+IE,2020,Petrol,0
+LI,2016,Petrol,0
+LT,2017,Petrol,0
+LU,2021,Petrol,0
+LV,2023,Petrol,0
+UK,2024,Petrol,26
+XK,2019,Petrol,2
+CH,2015,Other alternative,0
+CH,2022,Other alternative,3
+ES,2021,Other alternative,29
+ES,2024,Other alternative,52
+FR,2021,Other alternative,16
+FR,2022,Other alternative,118
+HR,2019,Other alternative,1
+HU,2019,Other alternative,0
+HU,2020,Other alternative,0
+LI,2022,Other alternative,0
+MT,2024,Other alternative,0
+PL,2017,Other alternative,0
+TR,2020,Other alternative,0
+LV,2025,Other alternative,0
+PT,2025,Other alternative,0
+BA,2016,Diesel,93
+BA,2019,Diesel,202
+CH,2014,Diesel,3402
+CH,2021,Diesel,2798
+DK,2021,Diesel,1985
+EE,2016,Diesel,250
+ES,2016,Diesel,6359
+FR,2020,Diesel,17004
+FR,2025,Diesel,20358
+GE,2019,Diesel,261
+HU,2024,Diesel,933
+IE,2021,Diesel,731
+IT,2024,Diesel,7995
+LI,2017,Diesel,22
+LI,2019,Diesel,16
+LI,2023,Diesel,18
+LV,2017,Diesel,326
+LV,2022,Diesel,346
+MT,2016,Diesel,71
+MT,2020,Diesel,73
+NL,2016,Diesel,4125
+PT,2020,Diesel,1036
+PT,2021,Diesel,1165
+PT,2022,Diesel,1122
+SE,2023,Diesel,5054
+SI,2024,Diesel,936
+SK,2024,Diesel,1011
+TR,2013,Diesel,17541
+XK,2018,Diesel,1239
+XK,2023,Diesel,2100
+BE,2017,Battery electric,0
+CH,2018,Battery electric,8
+CY,2023,Battery electric,0
+CY,2024,Battery electric,0
+CZ,2016,Battery electric,0
+DK,2020,Battery electric,16
+DK,2022,Battery electric,88
+EL,2017,Battery electric,0
+ES,2025,Battery electric,376
+FI,2016,Battery electric,0
+GE,2020,Battery electric,2
+HU,2015,Battery electric,0
+IS,2025,Battery electric,59
+IT,2025,Battery electric,448
+LI,2013,Battery electric,0
+LI,2020,Battery electric,0
+LU,2022,Battery electric,0
+LU,2023,Battery electric,8
+MT,2013,Battery electric,0
+MT,2021,Battery electric,0
+MT,2025,Battery electric,1
+NL,2018,Battery electric,22
+NL,2022,Battery electric,77
+PL,2023,Battery electric,83
+PT,2014,Battery electric,0
+PT,2017,Battery electric,0
+RO,2019,Battery electric,0
+SE,2017,Battery electric,1
+SE,2019,Battery electric,8
+SK,2013,Battery electric,0
+BA,2016,Diesel hybrid,0
+BA,2019,Diesel hybrid,0
+CH,2014,Diesel hybrid,2
+CH,2021,Diesel hybrid,0
+DK,2021,Diesel hybrid,0
+EE,2016,Diesel hybrid,0
+ES,2016,Diesel hybrid,12
+FR,2020,Diesel hybrid,16
+FR,2025,Diesel hybrid,0
+GE,2019,Diesel hybrid,0
+HU,2024,Diesel hybrid,1
+IT,2024,Diesel hybrid,2
+LI,2017,Diesel hybrid,0
+LI,2019,Diesel hybrid,0
+LI,2023,Diesel hybrid,0
+LV,2017,Diesel hybrid,0
+LV,2022,Diesel hybrid,0
+MT,2016,Diesel hybrid,0
+MT,2020,Diesel hybrid,0
+NL,2016,Diesel hybrid,3
+PT,2020,Diesel hybrid,2
+PT,2021,Diesel hybrid,0
+PT,2022,Diesel hybrid,0
+SE,2023,Diesel hybrid,4
+SI,2024,Diesel hybrid,1
+SK,2024,Diesel hybrid,0
+XK,2018,Diesel hybrid,0
+XK,2023,Diesel hybrid,0
+BA,2023,Petrol hybrid,0
+BE,2015,Petrol hybrid,0
+CH,2020,Petrol hybrid,0
+EL,2023,Petrol hybrid,0
+FR,2024,Petrol hybrid,0
+GE,2023,Petrol hybrid,0
+HU,2021,Petrol hybrid,0
+LT,2014,Petrol hybrid,0
+LV,2016,Petrol hybrid,0
+ME,2022,Petrol hybrid,0
+MT,2019,Petrol hybrid,0
+NL,2013,Petrol hybrid,0
+NL,2025,Petrol hybrid,0
+NO,2018,Petrol hybrid,0
+PT,2018,Petrol hybrid,0
+XK,2022,Petrol hybrid,3
+XK,2025,Petrol hybrid,1
+AT,2013,Gas,7
+AT,2015,Gas,3
+AT,2024,Gas,27
+BA,2024,Gas,0
+BE,2018,Gas,64
+BE,2021,Gas,99
+BE,2025,Gas,37
+EE,2013,Gas,0
+EE,2023,Gas,0
+EE,2025,Gas,4
+HU,2016,Gas,0
+IE,2014,Gas,0
+IE,2023,Gas,13
+IT,2022,Gas,66
+LU,2025,Gas,0
+ME,2023,Gas,0
+MT,2014,Gas,0
+MT,2015,Gas,0
+SK,2023,Gas,2
+UA,2025,Gas,0
+UK,2015,Gas,9
+AL,2025,Other alternative,4
+AT,2016,Other alternative,0
+DE,2019,Other alternative,43
+DE,2020,Other alternative,36
+ME,2025,Other alternative,0
+SI,2023,Other alternative,1
+FR,2017,Other alternative,17
+IS,2023,Other alternative,0
+IS,2024,Other alternative,0
+UA,2022,Other alternative,0
+UK,2017,Other alternative,13
+AT,2018,Petrol,1
+BA,2022,Petrol,0
+BE,2024,Petrol,5
+CH,2013,Petrol,12
+CY,2021,Petrol,0
+CZ,2023,Petrol,0
+DE,2022,Petrol,21
+DE,2023,Petrol,18
+DE,2024,Petrol,14
+EE,2018,Petrol,1
+FI,2018,Petrol,0
+FR,2023,Petrol,4
+HR,2024,Petrol,0
+LT,2024,Petrol,0
+LU,2013,Petrol,0
+MT,2018,Petrol,0
+MT,2023,Petrol,0
+SE,2021,Petrol,7
+SE,2022,Petrol,9
+BE,2017,Other alternative,0
+CH,2018,Other alternative,0
+CY,2023,Other alternative,0
+CY,2024,Other alternative,0
+FI,2016,Other alternative,10
+GE,2020,Other alternative,0
+HU,2015,Other alternative,0
+LI,2013,Other alternative,0
+LI,2020,Other alternative,0
+LU,2022,Other alternative,0
+LU,2023,Other alternative,0
+MT,2013,Other alternative,0
+MT,2021,Other alternative,0
+NL,2018,Other alternative,1
+NL,2022,Other alternative,8
+PT,2017,Other alternative,0
+SE,2017,Other alternative,3
+SE,2019,Other alternative,26
+DK,2022,Other alternative,0
+ES,2025,Other alternative,32
+IS,2025,Other alternative,0
+IT,2025,Other alternative,0
+MT,2025,Other alternative,0
+AT,2021,Diesel,3678
+BE,2013,Diesel,3464
+BE,2022,Diesel,3291
+ES,2022,Diesel,5647
+FR,2015,Diesel,13761
+FR,2019,Diesel,20482
+IT,2015,Diesel,3094
+IT,2019,Diesel,5948
+IT,2021,Diesel,7657
+LT,2018,Diesel,924
+ME,2017,Diesel,32
+ME,2019,Diesel,47
+SE,2013,Diesel,4476
+TR,2015,Diesel,22008
+TR,2019,Diesel,6655
+AL,2025,Battery electric,12
+AT,2016,Battery electric,0
+BG,2018,Battery electric,0
+CH,2015,Battery electric,3
+CH,2022,Battery electric,160
+CZ,2013,Battery electric,0
+CZ,2018,Battery electric,0
+DE,2016,Battery electric,11
+DE,2019,Battery electric,558
+DE,2020,Battery electric,776
+ES,2021,Battery electric,17
+ES,2024,Battery electric,298
+FR,2017,Battery electric,3
+FR,2021,Battery electric,32
+FR,2022,Battery electric,450
+HR,2019,Battery electric,0
+HU,2019,Battery electric,0
+HU,2020,Battery electric,0
+IS,2022,Battery electric,1
+IS,2023,Battery electric,18
+IS,2024,Battery electric,11
+LI,2022,Battery electric,1
+LV,2025,Battery electric,4
+ME,2025,Battery electric,0
+MT,2024,Battery electric,0
+PL,2017,Battery electric,0
+PT,2016,Battery electric,0
+PT,2025,Battery electric,82
+SI,2020,Battery electric,0
+SI,2023,Battery electric,5
+TR,2020,Battery electric,0
+UA,2022,Battery electric,0
+UK,2017,Battery electric,12
+AT,2021,Diesel hybrid,0
+BE,2013,Diesel hybrid,1
+BE,2022,Diesel hybrid,1
+ES,2022,Diesel hybrid,0
+FR,2015,Diesel hybrid,15
+FR,2019,Diesel hybrid,46
+SE,2013,Diesel hybrid,10
+TR,2019,Diesel hybrid,0
+AT,2020,Petrol hybrid,0
+BA,2020,Petrol hybrid,0
+CH,2023,Petrol hybrid,0
+EE,2019,Petrol hybrid,0
+EE,2020,Petrol hybrid,0
+EE,2022,Petrol hybrid,0
+EL,2024,Petrol hybrid,0
+FI,2019,Petrol hybrid,0
+FI,2024,Petrol hybrid,4
+HR,2025,Petrol hybrid,0
+HU,2018,Petrol hybrid,0
+HU,2022,Petrol hybrid,0
+LV,2014,Petrol hybrid,0
+LV,2024,Petrol hybrid,0
+ME,2018,Petrol hybrid,0
+SE,2016,Petrol hybrid,0
+SE,2024,Petrol hybrid,0
+XK,2021,Petrol hybrid,0
+BA,2018,Gas,5
+CH,2016,Gas,7
+CY,2015,Gas,0
+CY,2020,Gas,0
+ES,2020,Gas,249
+FI,2020,Gas,65
+GE,2018,Gas,0
+HU,2013,Gas,6
+IE,2015,Gas,0
+IE,2017,Gas,0
+IE,2022,Gas,10
+IT,2023,Gas,72
+LU,2019,Gas,0
+LU,2024,Gas,0
+LV,2015,Gas,1
+LV,2020,Gas,6
+MT,2017,Gas,0
+NL,2017,Gas,36
+NL,2019,Gas,29
+NO,2020,Gas,95
+NO,2022,Gas,251
+NO,2024,Gas,464
+NO,2025,Gas,405
+PL,2015,Gas,0
+PT,2024,Gas,12
+TR,2022,Gas,0
+UA,2024,Gas,0
+UK,2022,Gas,27
+AT,2022,Petrol,1
+AT,2023,Petrol,0
+BA,2015,Petrol,0
+BA,2021,Petrol,0
+BA,2025,Petrol,0
+CY,2018,Petrol,0
+CZ,2025,Petrol,0
+DK,2023,Petrol,0
+ES,2023,Petrol,8
+FI,2015,Petrol,23
+FI,2017,Petrol,6
+FR,2018,Petrol,2
+GE,2017,Petrol,7
+GE,2021,Petrol,1
+IE,2025,Petrol,0
+LI,2021,Petrol,0
+LU,2020,Petrol,0
+NL,2023,Petrol,0
+NO,2016,Petrol,1
+SE,2020,Petrol,14
+TR,2017,Petrol,0
+TR,2023,Petrol,0
+UK,2018,Petrol,72
+BA,2017,Other alternative,0
+BE,2016,Other alternative,0
+CY,2013,Other alternative,0
+CY,2016,Other alternative,0
+ES,2014,Other alternative,2
+FI,2021,Other alternative,0
+LI,2015,Other alternative,0
+LT,2019,Other alternative,5
+LV,2021,Other alternative,0
+NL,2024,Other alternative,9
+NO,2021,Other alternative,12
+SE,2015,Other alternative,7
+TR,2018,Other alternative,0
+GE,2025,Other alternative,0
+AL,2019,Diesel,553
+AT,2022,Diesel,3064
+AT,2023,Diesel,3719
+BA,2015,Diesel,84
+BA,2021,Diesel,228
+BA,2025,Diesel,243
+CY,2018,Diesel,112
+CZ,2025,Diesel,8993
+DK,2023,Diesel,1791
+ES,2023,Diesel,6372
+FI,2015,Diesel,2678
+FI,2017,Diesel,3438
+FR,2018,Diesel,20376
+GE,2017,Diesel,180
+GE,2021,Diesel,156
+HR,2022,Diesel,512
+IE,2025,Diesel,1202
+IT,2013,Diesel,2772
+LI,2021,Diesel,18
+LU,2020,Diesel,421
+NL,2023,Diesel,3770
+NO,2016,Diesel,3918
+SE,2020,Diesel,4609
+TR,2017,Diesel,17647
+TR,2023,Diesel,18128
+UK,2018,Diesel,29630
+BA,2013,Battery electric,0
+BE,2019,Battery electric,0
+CY,2014,Battery electric,0
+EE,2015,Battery electric,0
+EE,2024,Battery electric,1
+EL,2019,Battery electric,0
+EL,2025,Battery electric,70
+FI,2023,Battery electric,38
+HR,2018,Battery electric,0
+HU,2025,Battery electric,41
+LI,2014,Battery electric,0
+LT,2023,Battery electric,0
+LU,2014,Battery electric,0
+LU,2016,Battery electric,0
+LU,2017,Battery electric,0
+LV,2019,Battery electric,0
+NL,2015,Battery electric,5
+NO,2019,Battery electric,7
+PL,2025,Battery electric,174
+PT,2019,Battery electric,0
+PT,2023,Battery electric,12
+SE,2025,Battery electric,911
+UK,2016,Battery electric,8
+AL,2019,Diesel hybrid,0
+AT,2022,Diesel hybrid,0
+AT,2023,Diesel hybrid,0
+BA,2015,Diesel hybrid,0
+BA,2021,Diesel hybrid,0
+BA,2025,Diesel hybrid,0
+CY,2018,Diesel hybrid,0
+CZ,2025,Diesel hybrid,0
+DK,2023,Diesel hybrid,0
+ES,2023,Diesel hybrid,36
+FI,2015,Diesel hybrid,1
+FI,2017,Diesel hybrid,0
+FR,2018,Diesel hybrid,39
+GE,2017,Diesel hybrid,0
+GE,2021,Diesel hybrid,0
+IE,2025,Diesel hybrid,0
+LI,2021,Diesel hybrid,0
+LU,2020,Diesel hybrid,0
+NL,2023,Diesel hybrid,26
+NO,2016,Diesel hybrid,5
+SE,2020,Diesel hybrid,0
+TR,2017,Diesel hybrid,0
+TR,2023,Diesel hybrid,0
+UK,2018,Diesel hybrid,0
+AT,2013,Petrol hybrid,0
+AT,2015,Petrol hybrid,0
+AT,2024,Petrol hybrid,0
+BA,2024,Petrol hybrid,0
+BE,2018,Petrol hybrid,0
+BE,2021,Petrol hybrid,0
+BE,2025,Petrol hybrid,0
+EE,2013,Petrol hybrid,0
+EE,2023,Petrol hybrid,0
+EE,2025,Petrol hybrid,0
+HU,2016,Petrol hybrid,0
+IE,2014,Petrol hybrid,0
+IE,2023,Petrol hybrid,0
+IT,2022,Petrol hybrid,0
+LU,2015,Petrol hybrid,0
+LU,2025,Petrol hybrid,0
+ME,2023,Petrol hybrid,0
+MT,2014,Petrol hybrid,0
+MT,2015,Petrol hybrid,0
+SK,2023,Petrol hybrid,0
+UA,2025,Petrol hybrid,0
+UK,2015,Petrol hybrid,0
+BA,2023,Gas,0
+BE,2015,Gas,14
+CH,2020,Gas,20
+EL,2023,Gas,5
+FR,2024,Gas,669
+GE,2023,Gas,0
+HU,2021,Gas,3
+IS,2021,Gas,4
+IT,2018,Gas,21
+LV,2016,Gas,0
+ME,2022,Gas,0
+MT,2019,Gas,0
+NL,2013,Gas,28
+NL,2025,Gas,7
+NO,2018,Gas,36
+PT,2018,Gas,10
+XK,2017,Gas,0
+XK,2022,Gas,0
+XK,2025,Gas,0
+EE,2014,Other alternative,0
+UA,2020,Other alternative,0
+UA,2021,Other alternative,0
+AT,2021,Petrol,2
+BE,2013,Petrol,1
+BE,2022,Petrol,8
+ES,2022,Petrol,2
+FR,2015,Petrol,1
+FR,2019,Petrol,3
+IT,2019,Petrol,71
+IT,2021,Petrol,1
+LT,2018,Petrol,0
+LT,2020,Petrol,1
+LT,2021,Petrol,0
+ME,2017,Petrol,0
+ME,2019,Petrol,0
+SE,2013,Petrol,20
+TR,2019,Petrol,0
+BA,2022,Other alternative,0
+BE,2024,Other alternative,4
+CH,2013,Other alternative,0
+CY,2021,Other alternative,0
+FR,2023,Other alternative,540
+LT,2024,Other alternative,6
+MT,2018,Other alternative,0
+MT,2023,Other alternative,0
+SE,2021,Other alternative,24
+SE,2022,Other alternative,11
+FI,2018,Other alternative,3
+BA,2013,Diesel,108
+BE,2019,Diesel,5256
+CY,2014,Diesel,20
+EE,2015,Diesel,218
+EE,2024,Diesel,250
+EL,2025,Diesel,419
+FI,2023,Diesel,3708
+HR,2018,Diesel,2479
+LI,2014,Diesel,15
+LT,2023,Diesel,898
+LU,2014,Diesel,373
+LU,2016,Diesel,444
+LU,2017,Diesel,332
+LV,2019,Diesel,389
+ME,2021,Diesel,93
+NL,2015,Diesel,3520
+NO,2019,Diesel,4474
+PL,2025,Diesel,8729
+PT,2019,Diesel,1391
+PT,2023,Diesel,1346
+SE,2025,Diesel,3951
+UK,2016,Diesel,32344
+AL,2019,Battery electric,0
+AT,2022,Battery electric,57
+AT,2023,Battery electric,43
+BA,2015,Battery electric,0
+BA,2021,Battery electric,0
+BA,2025,Battery electric,0
+BG,2017,Battery electric,0
+CY,2018,Battery electric,0
+CZ,2025,Battery electric,136
+DK,2023,Battery electric,266
+ES,2013,Battery electric,0
+ES,2023,Battery electric,184
+FI,2014,Battery electric,0
+FI,2015,Battery electric,1
+FI,2017,Battery electric,0
+FR,2018,Battery electric,1
+GE,2017,Battery electric,2
+GE,2021,Battery electric,1
+HR,2014,Battery electric,5
+HR,2022,Battery electric,0
+IE,2025,Battery electric,9
+IT,2013,Battery electric,0
+LI,2021,Battery electric,0
+LU,2020,Battery electric,1
+NL,2023,Battery electric,892
+NO,2016,Battery electric,1
+PL,2014,Battery electric,0
+PL,2019,Battery electric,1
+SE,2020,Battery electric,11
+TR,2017,Battery electric,0
+TR,2023,Battery electric,7
+UK,2018,Battery electric,13
+BA,2013,Diesel hybrid,0
+BE,2019,Diesel hybrid,6
+CY,2014,Diesel hybrid,0
+EE,2015,Diesel hybrid,0
+EE,2024,Diesel hybrid,0
+EL,2025,Diesel hybrid,0
+FI,2023,Diesel hybrid,5
+HR,2018,Diesel hybrid,0
+LI,2014,Diesel hybrid,0
+LT,2023,Diesel hybrid,0
+LU,2014,Diesel hybrid,0
+LU,2016,Diesel hybrid,0
+LU,2017,Diesel hybrid,0
+LV,2019,Diesel hybrid,0
+ME,2021,Diesel hybrid,0
+NL,2015,Diesel hybrid,15
+NO,2019,Diesel hybrid,0
+PL,2025,Diesel hybrid,1
+PT,2019,Diesel hybrid,9
+PT,2023,Diesel hybrid,0
+SE,2025,Diesel hybrid,0
+UK,2016,Diesel hybrid,2
+BE,2014,Petrol hybrid,0
+BE,2020,Petrol hybrid,0
+CH,2017,Petrol hybrid,0
+CY,2019,Petrol hybrid,1
+CZ,2024,Petrol hybrid,0
+DE,2018,Petrol hybrid,0
+DK,2025,Petrol hybrid,0
+FI,2022,Petrol hybrid,8
+GE,2022,Petrol hybrid,0
+HU,2017,Petrol hybrid,0
+IE,2020,Petrol hybrid,0
+LI,2016,Petrol hybrid,0
+LT,2017,Petrol hybrid,0
+LU,2021,Petrol hybrid,0
+LV,2023,Petrol hybrid,0
+XK,2019,Petrol hybrid,0
+AT,2025,Gas,1
+BE,2023,Gas,64
+CH,2019,Gas,11
+CH,2024,Gas,36
+CH,2025,Gas,19
+DE,2025,Gas,584
+EE,2017,Gas,0
+FI,2025,Gas,233
+HR,2017,Gas,0
+IE,2013,Gas,0
+LT,2022,Gas,3
+LT,2025,Gas,0
+NL,2021,Gas,29
+NO,2023,Gas,317
+PL,2016,Gas,8
+TR,2024,Gas,0
+UA,2023,Gas,0
+AT,2018,Other alternative,0
+DE,2022,Other alternative,38
+DE,2023,Other alternative,72
+DE,2024,Other alternative,91
+EE,2018,Other alternative,0
+CZ,2023,Other alternative,924
+HR,2024,Other alternative,0
+AT,2016,Petrol,0
+CH,2015,Petrol,22
+CH,2022,Petrol,0
+DE,2019,Petrol,43
+DE,2020,Petrol,33
+ES,2021,Petrol,4
+ES,2024,Petrol,6
+FR,2017,Petrol,3
+FR,2021,Petrol,1
+FR,2022,Petrol,0
+HR,2019,Petrol,1
+HU,2019,Petrol,0
+HU,2020,Petrol,0
+IS,2023,Petrol,1
+IS,2024,Petrol,0
+LI,2022,Petrol,0
+LV,2025,Petrol,0
+ME,2025,Petrol,1
+MT,2024,Petrol,0
+PT,2025,Petrol,0
+SI,2023,Petrol,0
+TR,2020,Petrol,0
+UA,2022,Petrol,0
+UK,2017,Petrol,58
+AT,2019,Other alternative,0
+CY,2022,Other alternative,0
+ES,2015,Other alternative,2
+ES,2018,Other alternative,9
+ES,2019,Other alternative,49
+HU,2014,Other alternative,0
+HU,2023,Other alternative,0
+LI,2018,Other alternative,0
+LV,2018,Other alternative,0
+SE,2014,Other alternative,12
+TR,2021,Other alternative,0
+TR,2025,Other alternative,0
+AT,2013,Diesel,3463
+AT,2015,Diesel,3508
+AT,2024,Diesel,4287
+BA,2024,Diesel,256
+BE,2018,Diesel,4709
+BE,2021,Diesel,3800
+BE,2025,Diesel,4910
+EE,2013,Diesel,214
+EE,2023,Diesel,296
+EE,2025,Diesel,266
+HU,2016,Diesel,931
+IE,2023,Diesel,1094
+IT,2022,Diesel,7322
+LU,2015,Diesel,336
+LU,2025,Diesel,306
+ME,2023,Diesel,20
+MT,2014,Diesel,250
+MT,2015,Diesel,51
+SK,2023,Diesel,674
+UA,2025,Diesel,1959
+UK,2015,Diesel,28367
+BE,2014,Battery electric,1
+BE,2020,Battery electric,3
+CH,2017,Battery electric,5
+CY,2019,Battery electric,0
+CZ,2022,Battery electric,4
+CZ,2024,Battery electric,27
+DE,2018,Battery electric,242
+DK,2019,Battery electric,3
+DK,2025,Battery electric,615
+FI,2022,Battery electric,15
+GE,2022,Battery electric,0
+HR,2015,Battery electric,0
+HR,2023,Battery electric,0
+HU,2017,Battery electric,1
+IE,2020,Battery electric,3
+LI,2016,Battery electric,0
+LT,2017,Battery electric,0
+LU,2021,Battery electric,0
+LV,2023,Battery electric,1
+PL,2018,Battery electric,0
+RO,2013,Battery electric,0
+UK,2024,Battery electric,1726
+XK,2019,Battery electric,0
+AT,2013,Diesel hybrid,0
+AT,2015,Diesel hybrid,0
+AT,2024,Diesel hybrid,0
+BA,2024,Diesel hybrid,0
+BE,2018,Diesel hybrid,0
+BE,2021,Diesel hybrid,0
+BE,2025,Diesel hybrid,0
+EE,2013,Diesel hybrid,0
+EE,2023,Diesel hybrid,0
+EE,2025,Diesel hybrid,0
+HU,2016,Diesel hybrid,0
+LU,2015,Diesel hybrid,0
+LU,2025,Diesel hybrid,0
+MT,2014,Diesel hybrid,0
+MT,2015,Diesel hybrid,0
+SK,2023,Diesel hybrid,0
+UA,2025,Diesel hybrid,0
+UK,2015,Diesel hybrid,0
+AT,2022,Petrol hybrid,0
+AT,2023,Petrol hybrid,0
+BA,2015,Petrol hybrid,0
+BA,2021,Petrol hybrid,0
+BA,2025,Petrol hybrid,0
+CY,2018,Petrol hybrid,0
+CZ,2025,Petrol hybrid,0
+DK,2023,Petrol hybrid,0
+ES,2023,Petrol hybrid,0
+FI,2015,Petrol hybrid,0
+FI,2017,Petrol hybrid,0
+GE,2017,Petrol hybrid,0
+GE,2021,Petrol hybrid,0
+IE,2025,Petrol hybrid,0
+LI,2021,Petrol hybrid,0
+LU,2020,Petrol hybrid,0
+NL,2023,Petrol hybrid,0
+NO,2016,Petrol hybrid,0
+SE,2020,Petrol hybrid,0
+TR,2017,Petrol hybrid,0
+TR,2023,Petrol hybrid,0
+UK,2018,Petrol hybrid,0
+BA,2016,Gas,0
+BA,2019,Gas,0
+CH,2014,Gas,12
+CH,2021,Gas,18
+CZ,2021,Gas,90
+DK,2021,Gas,50
+EE,2016,Gas,0
+ES,2016,Gas,82
+FR,2020,Gas,464
+FR,2025,Gas,890
+GE,2019,Gas,0
+HU,2024,Gas,0
+IT,2024,Gas,38
+LI,2017,Gas,0
+LI,2019,Gas,0
+LI,2023,Gas,0
+LV,2017,Gas,0
+LV,2022,Gas,0
+MT,2016,Gas,0
+MT,2020,Gas,0
+NL,2016,Gas,8
+PT,2020,Gas,22
+PT,2021,Gas,21
+PT,2022,Gas,7
+SE,2023,Gas,731
+SI,2024,Gas,2
+SK,2024,Gas,1
+XK,2018,Gas,0
+XK,2023,Gas,0
+AT,2014,Other alternative,0
+FR,2014,Other alternative,13
+SI,2025,Other alternative,0
+LT,2016,Other alternative,0
+NO,2017,Other alternative,1
+UA,2019,Other alternative,0
+AT,2020,Petrol,0
+BA,2020,Petrol,0
+CH,2023,Petrol,2
+EE,2019,Petrol,0
+EE,2020,Petrol,0
+EE,2022,Petrol,1
+EL,2024,Petrol,0
+FI,2019,Petrol,147
+FI,2024,Petrol,69
+HR,2025,Petrol,0
+HU,2018,Petrol,0
+HU,2022,Petrol,1
+LV,2014,Petrol,0
+LV,2024,Petrol,0
+ME,2018,Petrol,0
+NL,2014,Petrol,1
+NL,2020,Petrol,3
+SE,2016,Petrol,16
+SE,2024,Petrol,7
+XK,2021,Petrol,2
+BA,2013,Other alternative,0
+BE,2019,Other alternative,1
+CY,2014,Other alternative,0
+FI,2023,Other alternative,2
+HR,2018,Other alternative,2
+LI,2014,Other alternative,0
+LT,2023,Other alternative,6
+LV,2019,Other alternative,0
+NL,2015,Other alternative,2
+NO,2019,Other alternative,20
+PT,2019,Other alternative,0
+PT,2023,Other alternative,1
+SE,2025,Other alternative,1
+AT,2018,Diesel,4290
+BA,2022,Diesel,223
+BE,2024,Diesel,4210
+CH,2013,Diesel,2742
+CY,2021,Diesel,58
+CZ,2023,Diesel,7925
+DE,2022,Diesel,30183
+DE,2023,Diesel,36782
+DE,2024,Diesel,39541
+EE,2018,Diesel,321
+FI,2018,Diesel,3804
+FR,2023,Diesel,14917
+HR,2020,Diesel,2245
+HR,2024,Diesel,680
+IE,2024,Diesel,1141
+LT,2024,Diesel,1267
+LU,2013,Diesel,372
+MT,2018,Diesel,78
+MT,2023,Diesel,94
+RO,2024,Diesel,1957
+SE,2021,Diesel,4832
+SE,2022,Diesel,4552
+BA,2017,Battery electric,0
+BE,2016,Battery electric,1
+BG,2021,Battery electric,0
+CY,2013,Battery electric,0
+CY,2016,Battery electric,0
+DK,2013,Battery electric,0
+EE,2014,Battery electric,0
+ES,2014,Battery electric,0
+FI,2021,Battery electric,2
+GE,2025,Battery electric,16
+IE,2018,Battery electric,0
+IT,2020,Battery electric,10
+LI,2015,Battery electric,0
+LT,2019,Battery electric,0
+LV,2021,Battery electric,0
+NL,2024,Battery electric,398
+NO,2021,Battery electric,66
+PL,2021,Battery electric,5
+PL,2024,Battery electric,118
+RO,2023,Battery electric,2
+SE,2015,Battery electric,0
+SI,2021,Battery electric,0
+SK,2015,Battery electric,0
+SK,2016,Battery electric,0
+SK,2022,Battery electric,2
+TR,2018,Battery electric,0
+UA,2020,Battery electric,0
+UA,2021,Battery electric,1
+UK,2021,Battery electric,147
+UK,2023,Battery electric,1446
+AT,2018,Diesel hybrid,0
+BA,2022,Diesel hybrid,0
+BE,2024,Diesel hybrid,2
+CH,2013,Diesel hybrid,5
+CY,2021,Diesel hybrid,0
+CZ,2023,Diesel hybrid,0
+DE,2022,Diesel hybrid,1
+DE,2023,Diesel hybrid,2
+DE,2024,Diesel hybrid,7
+EE,2018,Diesel hybrid,0
+FI,2018,Diesel hybrid,4
+FR,2023,Diesel hybrid,3
+HR,2024,Diesel hybrid,0
+LT,2024,Diesel hybrid,0
+LU,2013,Diesel hybrid,0
+MT,2018,Diesel hybrid,0
+MT,2023,Diesel hybrid,0
+RO,2024,Diesel hybrid,0
+SE,2021,Diesel hybrid,2
+SE,2022,Diesel hybrid,2
+BA,2018,Petrol hybrid,0
+CH,2016,Petrol hybrid,0
+CY,2015,Petrol hybrid,0
+CY,2020,Petrol hybrid,0
+ES,2020,Petrol hybrid,0
+FI,2020,Petrol hybrid,0
+GE,2018,Petrol hybrid,0
+HU,2013,Petrol hybrid,0
+IE,2017,Petrol hybrid,0
+IE,2022,Petrol hybrid,0
+IT,2023,Petrol hybrid,0
+LT,2015,Petrol hybrid,0
+LU,2018,Petrol hybrid,0
+LU,2019,Petrol hybrid,0
+LU,2024,Petrol hybrid,0
+LV,2015,Petrol hybrid,0
+LV,2020,Petrol hybrid,0
+MT,2017,Petrol hybrid,0
+NO,2020,Petrol hybrid,0
+NO,2022,Petrol hybrid,0
+NO,2024,Petrol hybrid,0
+NO,2025,Petrol hybrid,0
+PT,2024,Petrol hybrid,0
+TR,2022,Petrol hybrid,0
+UA,2024,Petrol hybrid,0
+AT,2020,Gas,24
+BA,2020,Gas,0
+CH,2023,Gas,19
+EE,2019,Gas,6
+EE,2020,Gas,10
+EE,2022,Gas,3
+EL,2024,Gas,3
+FI,2019,Gas,41
+FI,2024,Gas,178
+FR,2013,Gas,3
+HU,2018,Gas,0
+HU,2022,Gas,3
+IT,2016,Gas,3
+LV,2014,Gas,0
+LV,2024,Gas,9
+NL,2014,Gas,9
+NL,2020,Gas,23
+PL,2013,Gas,0
+SE,2016,Gas,78
+SE,2024,Gas,545
+XK,2021,Gas,0
+EE,2015,Other alternative,0
+EE,2024,Other alternative,0
+EL,2025,Other alternative,0
+UK,2016,Other alternative,4
+BA,2016,Petrol,0
+BA,2019,Petrol,0
+CH,2014,Petrol,37
+CH,2021,Petrol,3
+DK,2021,Petrol,2
+EE,2016,Petrol,0
+ES,2016,Petrol,19
+FR,2020,Petrol,1
+FR,2025,Petrol,23
+GE,2019,Petrol,3
+HU,2024,Petrol,0
+IE,2021,Petrol,0
+IT,2024,Petrol,0
+LI,2017,Petrol,0
+LI,2019,Petrol,0
+LI,2023,Petrol,0
+LV,2017,Petrol,0
+LV,2022,Petrol,0
+MT,2016,Petrol,0
+MT,2020,Petrol,0
+NL,2016,Petrol,0
+PT,2020,Petrol,0
+PT,2021,Petrol,0
+PT,2022,Petrol,0
+SE,2023,Petrol,7
+SI,2024,Petrol,1
+SK,2024,Petrol,0
+XK,2018,Petrol,2
+XK,2023,Petrol,9
+BA,2018,Other alternative,0
+CH,2016,Other alternative,0
+CY,2015,Other alternative,0
+CY,2020,Other alternative,0
+ES,2020,Other alternative,87
+FI,2020,Other alternative,0
+GE,2018,Other alternative,0
+HU,2013,Other alternative,0
+IE,2015,Other alternative,0
+IE,2017,Other alternative,0
+LU,2019,Other alternative,0
+LU,2024,Other alternative,0
+LV,2015,Other alternative,0
+LV,2020,Other alternative,0
+MT,2017,Other alternative,0
+NL,2017,Other alternative,3
+NL,2019,Other alternative,4
+NO,2020,Other alternative,3
+NO,2022,Other alternative,1
+NO,2024,Other alternative,2
+PL,2015,Other alternative,0
+PT,2024,Other alternative,0
+TR,2022,Other alternative,0
+UA,2024,Other alternative,0
+NO,2025,Other alternative,1
+BE,2014,Diesel,3658
+BE,2020,Diesel,4100
+CH,2017,Diesel,3183
+CY,2019,Diesel,107
+CZ,2024,Diesel,8476
+DE,2018,Diesel,43079
+DK,2025,Diesel,1637
+FI,2022,Diesel,3124
+GE,2022,Diesel,290
+HR,2015,Diesel,1472
+HR,2023,Diesel,655
+HU,2017,Diesel,1380
+IE,2020,Diesel,730
+LI,2016,Diesel,20
+LT,2017,Diesel,710
+LU,2021,Diesel,397
+LV,2023,Diesel,361
+UK,2024,Diesel,30797
+XK,2019,Diesel,1418
+AT,2013,Battery electric,0
+AT,2015,Battery electric,0
+AT,2024,Battery electric,133
+BA,2024,Battery electric,0
+BE,2018,Battery electric,1
+BE,2021,Battery electric,3
+BE,2025,Battery electric,212
+EE,2013,Battery electric,0
+EE,2023,Battery electric,0
+EE,2025,Battery electric,2
+EL,2016,Battery electric,0
+HU,2016,Battery electric,0
+IE,2014,Battery electric,0
+IE,2023,Battery electric,11
+IT,2022,Battery electric,12
+LU,2015,Battery electric,0
+LU,2025,Battery electric,14
+ME,2023,Battery electric,0
+MT,2014,Battery electric,0
+MT,2015,Battery electric,0
+SI,2013,Battery electric,0
+SK,2017,Battery electric,0
+SK,2019,Battery electric,0
+SK,2023,Battery electric,2
+UA,2025,Battery electric,9
+UK,2015,Battery electric,3
+BE,2014,Diesel hybrid,1
+BE,2020,Diesel hybrid,0
+CH,2017,Diesel hybrid,3
+CY,2019,Diesel hybrid,0
+CZ,2024,Diesel hybrid,0
+DE,2018,Diesel hybrid,4
+DK,2025,Diesel hybrid,0
+FI,2022,Diesel hybrid,0
+GE,2022,Diesel hybrid,0
+HU,2017,Diesel hybrid,0
+LI,2016,Diesel hybrid,0
+LU,2021,Diesel hybrid,0
+LV,2023,Diesel hybrid,0
+XK,2019,Diesel hybrid,0
+BA,2013,Petrol hybrid,0
+BE,2019,Petrol hybrid,0
+CY,2014,Petrol hybrid,0
+EE,2015,Petrol hybrid,0
+EE,2024,Petrol hybrid,0
+EL,2025,Petrol hybrid,0
+FI,2023,Petrol hybrid,7
+HR,2018,Petrol hybrid,0
+HU,2025,Petrol hybrid,0
+LI,2014,Petrol hybrid,0
+LT,2023,Petrol hybrid,0
+LU,2014,Petrol hybrid,0
+LU,2016,Petrol hybrid,0
+LU,2017,Petrol hybrid,0
+LV,2019,Petrol hybrid,0
+ME,2021,Petrol hybrid,0
+NO,2019,Petrol hybrid,0
+PL,2025,Petrol hybrid,0
+PT,2019,Petrol hybrid,0
+PT,2023,Petrol hybrid,0
+SE,2025,Petrol hybrid,0
+UK,2016,Petrol hybrid,0
+BE,2017,Gas,2
+CH,2018,Gas,7
+CY,2023,Gas,0
+CY,2024,Gas,0
+DK,2022,Gas,11
+ES,2025,Gas,277
+FI,2016,Gas,3
+GE,2020,Gas,0
+HU,2015,Gas,0
+IS,2025,Gas,3
+IT,2025,Gas,30
+LI,2013,Gas,0
+LI,2020,Gas,1
+LU,2022,Gas,0
+LU,2023,Gas,0
+MT,2013,Gas,0
+MT,2021,Gas,0
+MT,2025,Gas,0
+NL,2018,Gas,14
+NL,2022,Gas,17
+PL,2023,Gas,348
+PT,2017,Gas,4
+SE,2017,Gas,119
+SE,2019,Gas,174
+IE,2022,Other alternative,5
+LT,2015,Other alternative,0
+AT,2017,Petrol,0
+BA,2014,Petrol,0
+CY,2017,Petrol,0
+CY,2025,Petrol,0
+DE,2017,Petrol,37
+DE,2021,Petrol,22
+DK,2024,Petrol,0
+EE,2021,Petrol,0
+GE,2024,Petrol,5
+LI,2024,Petrol,0
+MT,2022,Petrol,0
+SE,2018,Petrol,15
+XK,2024,Petrol,21
+BE,2014,Other alternative,0
+BE,2020,Other alternative,0
+CH,2017,Other alternative,1
+CY,2019,Other alternative,0
+CZ,2024,Other alternative,0
+FI,2022,Other alternative,1
+GE,2022,Other alternative,0
+HR,2015,Other alternative,3
+HU,2017,Other alternative,0
+LI,2016,Other alternative,0
+LT,2017,Other alternative,0
+LU,2021,Other alternative,0
+LV,2023,Other alternative,0
+XK,2019,Other alternative,0
+DK,2025,Other alternative,0
+BA,2018,Diesel,150
+CH,2016,Diesel,3135
+CY,2015,Diesel,36
+CY,2020,Diesel,73
+ES,2020,Diesel,5666
+FI,2020,Diesel,3229
+GE,2018,Diesel,151
+HU,2013,Diesel,697
+IE,2017,Diesel,944
+IE,2022,Diesel,781
+IS,2019,Diesel,477
+IT,2014,Diesel,2844
+IT,2023,Diesel,7794
+LT,2015,Diesel,479
+LU,2018,Diesel,175
+LU,2019,Diesel,295
+LU,2024,Diesel,340
+LV,2015,Diesel,221
+LV,2020,Diesel,262
+ME,2024,Diesel,76
+MT,2017,Diesel,69
+NL,2017,Diesel,4104
+NL,2019,Diesel,4616
+NO,2020,Diesel,4697
+NO,2022,Diesel,3688
+NO,2024,Diesel,2858
+NO,2025,Diesel,2393
+PT,2024,Diesel,1482
+TR,2022,Diesel,14004
+UA,2024,Diesel,2516
+UK,2022,Diesel,25321
+AT,2014,Battery electric,0
+AT,2019,Battery electric,2
+BG,2015,Battery electric,0
+CY,2022,Battery electric,0
+DE,2015,Battery electric,0
+EL,2014,Battery electric,0
+ES,2015,Battery electric,0
+ES,2018,Battery electric,6
+ES,2019,Battery electric,4
+FR,2014,Battery electric,10
+HU,2014,Battery electric,0
+HU,2023,Battery electric,26
+IT,2017,Battery electric,7
+LI,2018,Battery electric,0
+LT,2013,Battery electric,0
+LT,2016,Battery electric,0
+LV,2018,Battery electric,0
+NO,2017,Battery electric,0
+RO,2014,Battery electric,0
+RO,2020,Battery electric,0
+RO,2021,Battery electric,0
+SE,2014,Battery electric,0
+SI,2025,Battery electric,4
+SK,2025,Battery electric,11
+TR,2021,Battery electric,0
+TR,2025,Battery electric,11
+UA,2019,Battery electric,1
+BA,2018,Diesel hybrid,0
+CH,2016,Diesel hybrid,6
+CY,2015,Diesel hybrid,0
+CY,2020,Diesel hybrid,0
+ES,2020,Diesel hybrid,30
+FI,2020,Diesel hybrid,0
+GE,2018,Diesel hybrid,0
+HU,2013,Diesel hybrid,0
+IE,2017,Diesel hybrid,0
+IT,2023,Diesel hybrid,5
+LT,2015,Diesel hybrid,1
+LU,2018,Diesel hybrid,0
+LU,2019,Diesel hybrid,0
+LU,2024,Diesel hybrid,0
+LV,2015,Diesel hybrid,0
+LV,2020,Diesel hybrid,0
+ME,2024,Diesel hybrid,0
+MT,2017,Diesel hybrid,0
+NL,2017,Diesel hybrid,2
+NL,2019,Diesel hybrid,3
+NO,2020,Diesel hybrid,0
+NO,2022,Diesel hybrid,0
+NO,2024,Diesel hybrid,0
+NO,2025,Diesel hybrid,0
+PT,2024,Diesel hybrid,0
+TR,2022,Diesel hybrid,0
+UA,2024,Diesel hybrid,0
+AT,2018,Petrol hybrid,0
+BA,2022,Petrol hybrid,0
+BE,2024,Petrol hybrid,0
+CH,2013,Petrol hybrid,0
+CY,2021,Petrol hybrid,0
+CZ,2023,Petrol hybrid,0
+DE,2022,Petrol hybrid,0
+DE,2023,Petrol hybrid,0
+DE,2024,Petrol hybrid,1
+EE,2018,Petrol hybrid,0
+FI,2018,Petrol hybrid,0
+FR,2023,Petrol hybrid,0
+HR,2024,Petrol hybrid,0
+LT,2024,Petrol hybrid,0
+LU,2013,Petrol hybrid,0
+MT,2018,Petrol hybrid,0
+MT,2023,Petrol hybrid,0
+SE,2021,Petrol hybrid,0
+SE,2022,Petrol hybrid,0
+AT,2021,Gas,37
+BE,2013,Gas,2
+BE,2022,Gas,22
+ES,2022,Gas,606
+FR,2015,Gas,35
+FR,2019,Gas,365
+IE,2016,Gas,0
+IT,2021,Gas,120
+LT,2018,Gas,0
+LT,2020,Gas,0
+LT,2021,Gas,0
+SE,2013,Gas,80
+TR,2019,Gas,0
+DE,2018,Other alternative,18
+IE,2020,Other alternative,1
+BA,2023,Petrol,0
+BE,2015,Petrol,1
+CH,2020,Petrol,2
+EL,2023,Petrol,0
+FR,2016,Petrol,0
+FR,2024,Petrol,6
+GE,2023,Petrol,2
+HR,2016,Petrol,1
+HU,2021,Petrol,1
+IS,2021,Petrol,2
+IT,2018,Petrol,1
+LT,2014,Petrol,0
+LV,2016,Petrol,0
+ME,2022,Petrol,0
+MT,2019,Petrol,0
+NL,2013,Petrol,0
+NL,2025,Petrol,0
+NO,2018,Petrol,3
+PT,2018,Petrol,0
+XK,2017,Petrol,0
+XK,2022,Petrol,2
+XK,2025,Petrol,25
+BE,2023,Other alternative,2
+CH,2019,Other alternative,0
+HR,2017,Other alternative,2
+IE,2013,Other alternative,0
+LT,2022,Other alternative,2
+NL,2021,Other alternative,7
+NO,2023,Other alternative,0
+PL,2016,Other alternative,0
+TR,2024,Other alternative,0
+AT,2025,Other alternative,7
+CH,2025,Other alternative,0
+FI,2025,Other alternative,36
+LT,2025,Other alternative,1
+AT,2020,Diesel,3473
+BA,2020,Diesel,140
+CH,2023,Diesel,2856
+EE,2019,Diesel,321
+EE,2020,Diesel,224
+EE,2022,Diesel,253
+EL,2024,Diesel,682
+FI,2019,Diesel,3796
+FI,2024,Diesel,3088
+FR,2013,Diesel,13180
+HR,2025,Diesel,543
+HU,2018,Diesel,1526
+HU,2022,Diesel,885
+IT,2016,Diesel,4336
+LV,2014,Diesel,349
+LV,2024,Diesel,355
+ME,2018,Diesel,46
+NL,2014,Diesel,2693
+NL,2020,Diesel,3395
+RO,2025,Diesel,1607
+SE,2016,Diesel,5920
+SE,2024,Diesel,3993
+TR,2016,Diesel,16708
+XK,2021,Diesel,1718
+AT,2017,Battery electric,0
+BA,2014,Battery electric,0
+BG,2016,Battery electric,0
+CY,2017,Battery electric,0
+CY,2025,Battery electric,1
+CZ,2017,Battery electric,0
+DE,2013,Battery electric,0
+DE,2017,Battery electric,30
+DE,2021,Battery electric,878
+DK,2016,Battery electric,0
+DK,2024,Battery electric,404
+EE,2021,Battery electric,0
+EL,2013,Battery electric,0
+FI,2013,Battery electric,0
+GE,2024,Battery electric,26
+IE,2019,Battery electric,0
+LI,2024,Battery electric,1
+MT,2022,Battery electric,0
+SE,2018,Battery electric,4
+SI,2015,Battery electric,0
+SI,2018,Battery electric,0
+SK,2018,Battery electric,0
+XK,2024,Battery electric,0
+AT,2020,Diesel hybrid,0
+BA,2020,Diesel hybrid,0
+CH,2023,Diesel hybrid,0
+EE,2019,Diesel hybrid,0
+EE,2020,Diesel hybrid,0
+EE,2022,Diesel hybrid,0
+EL,2024,Diesel hybrid,0
+FI,2019,Diesel hybrid,5
+FI,2024,Diesel hybrid,32
+FR,2013,Diesel hybrid,17
+HR,2025,Diesel hybrid,0
+HU,2018,Diesel hybrid,0
+HU,2022,Diesel hybrid,2
+LV,2014,Diesel hybrid,0
+LV,2024,Diesel hybrid,0
+NL,2014,Diesel hybrid,9
+NL,2020,Diesel hybrid,3
+RO,2025,Diesel hybrid,0
+SE,2016,Diesel hybrid,1
+SE,2024,Diesel hybrid,0
+TR,2016,Diesel hybrid,0
+XK,2021,Diesel hybrid,0
+AT,2021,Petrol hybrid,0
+BE,2013,Petrol hybrid,0
+BE,2022,Petrol hybrid,0
+ES,2022,Petrol hybrid,0
+LT,2018,Petrol hybrid,0
+LT,2020,Petrol hybrid,0
+LT,2021,Petrol hybrid,0
+ME,2017,Petrol hybrid,0
+ME,2019,Petrol hybrid,0
+SE,2013,Petrol hybrid,0
+TR,2019,Petrol hybrid,0
+AT,2018,Gas,5
+BA,2022,Gas,3
+BE,2024,Gas,21
+CH,2013,Gas,16
+CY,2021,Gas,0
+CZ,2023,Gas,30
+DE,2022,Gas,407
+DE,2023,Gas,677
+DE,2024,Gas,581
+EE,2018,Gas,1
+FI,2018,Gas,28
+FR,2023,Gas,895
+IE,2024,Gas,10
+LT,2024,Gas,0
+MT,2018,Gas,0
+MT,2023,Gas,0
+SE,2021,Gas,299
+SE,2022,Gas,438
+DE,2025,Other alternative,122
+EE,2017,Other alternative,0
+ES,2017,Other alternative,11
+UA,2023,Other alternative,0
+AT,2013,Petrol,0
+AT,2015,Petrol,0
+AT,2024,Petrol,0
+BA,2024,Petrol,0
+BE,2018,Petrol,5
+BE,2021,Petrol,14
+BE,2025,Petrol,1
+EE,2013,Petrol,1
+EE,2023,Petrol,0
+EE,2025,Petrol,0
+HU,2016,Petrol,0
+IE,2014,Petrol,0
+IE,2023,Petrol,0
+IT,2022,Petrol,2
+LU,2015,Petrol,1
+LU,2025,Petrol,1
+ME,2023,Petrol,0
+MT,2014,Petrol,0
+MT,2015,Petrol,0
+SK,2023,Petrol,0
+UA,2025,Petrol,0
+UK,2015,Petrol,59
+AT,2021,Other alternative,0
+BE,2013,Other alternative,1
+BE,2022,Other alternative,0
+ES,2022,Other alternative,37
+IE,2016,Other alternative,0
+LT,2018,Other alternative,0
+LT,2020,Other alternative,1
+LT,2021,Other alternative,13
+SE,2013,Other alternative,71
+TR,2019,Other alternative,0
+BE,2017,Diesel,4354
+CH,2018,Diesel,3308
+CY,2023,Diesel,132
+CY,2024,Diesel,151
+DK,2022,Diesel,1980
+ES,2025,Diesel,8879
+FI,2016,Diesel,3283
+GE,2020,Diesel,179
+HU,2015,Diesel,1096
+IS,2025,Diesel,311
+IT,2025,Diesel,7699
+LI,2013,Diesel,20
+LI,2020,Diesel,14
+LU,2022,Diesel,343
+LU,2023,Diesel,395
+ME,2016,Diesel,34
+MT,2013,Diesel,263
+MT,2021,Diesel,12
+MT,2025,Diesel,74
+NL,2018,Diesel,4567
+NL,2022,Diesel,3281
+PT,2017,Diesel,1272
+SE,2017,Diesel,5919
+SE,2019,Diesel,6238
+TR,2014,Diesel,17163
+BA,2016,Battery electric,0
+BA,2019,Battery electric,0
+BG,2014,Battery electric,0
+CH,2014,Battery electric,4
+CH,2021,Battery electric,77
+CZ,2021,Battery electric,7
+DK,2017,Battery electric,0
+DK,2018,Battery electric,0
+DK,2021,Battery electric,25
+EE,2016,Battery electric,0
+EL,2020,Battery electric,0
+ES,2016,Battery electric,2
+FR,2020,Battery electric,19
+FR,2025,Battery electric,732
+GE,2019,Battery electric,0
+HU,2024,Battery electric,23
+IE,2021,Battery electric,4
+IT,2024,Battery electric,157
+LI,2017,Battery electric,0
+LI,2019,Battery electric,0
+LI,2023,Battery electric,0
+LV,2017,Battery electric,0
+LV,2022,Battery electric,0
+MT,2016,Battery electric,0
+MT,2020,Battery electric,0
+NL,2016,Battery electric,15
+PL,2022,Battery electric,6
+PT,2020,Battery electric,0
+PT,2021,Battery electric,2
+PT,2022,Battery electric,2
+RO,2022,Battery electric,0
+SE,2023,Battery electric,155
+SI,2016,Battery electric,0
+SI,2022,Battery electric,1
+SI,2024,Battery electric,2
+SK,2024,Battery electric,7
+XK,2018,Battery electric,0
+XK,2023,Battery electric,2
+BE,2017,Diesel hybrid,4
+CH,2018,Diesel hybrid,0
+CY,2023,Diesel hybrid,0
+CY,2024,Diesel hybrid,0
+DK,2022,Diesel hybrid,0
+ES,2025,Diesel hybrid,14
+FI,2016,Diesel hybrid,0
+GE,2020,Diesel hybrid,0
+HU,2015,Diesel hybrid,0
+IS,2025,Diesel hybrid,0
+IT,2025,Diesel hybrid,5
+LI,2013,Diesel hybrid,0
+LI,2020,Diesel hybrid,0
+LU,2022,Diesel hybrid,0
+LU,2023,Diesel hybrid,0
+MT,2013,Diesel hybrid,0
+MT,2021,Diesel hybrid,0
+MT,2025,Diesel hybrid,0
+NL,2018,Diesel hybrid,5
+NL,2022,Diesel hybrid,5
+PT,2017,Diesel hybrid,5
+SE,2017,Diesel hybrid,2
+SE,2019,Diesel hybrid,2
+AT,2025,Petrol hybrid,0
+BE,2023,Petrol hybrid,0
+CH,2019,Petrol hybrid,0
+CH,2025,Petrol hybrid,0
+DE,2025,Petrol hybrid,1
+EE,2017,Petrol hybrid,0
+FI,2025,Petrol hybrid,5
+HR,2017,Petrol hybrid,0
+IE,2013,Petrol hybrid,0
+LT,2022,Petrol hybrid,0
+LT,2025,Petrol hybrid,0
+NO,2023,Petrol hybrid,0
+UA,2023,Petrol hybrid,0
+BE,2014,Gas,11
+BE,2020,Gas,99
+CH,2017,Gas,6
+CY,2019,Gas,0
+CZ,2024,Gas,58
+DE,2018,Gas,104
+DK,2025,Gas,19
+FI,2022,Gas,93
+GE,2022,Gas,0
+HR,2015,Gas,0
+HU,2017,Gas,1
+IE,2020,Gas,5
+LI,2016,Gas,0
+LT,2017,Gas,0
+LU,2021,Gas,3
+LV,2023,Gas,9
+UK,2024,Gas,48
+XK,2019,Gas,0
+FR,2015,Other alternative,15
+FR,2019,Other alternative,20
+IT,2021,Other alternative,2
+TR,2015,Other alternative,1532
+BA,2017,Petrol,0
+BE,2016,Petrol,1
+CY,2013,Petrol,0
+CY,2016,Petrol,0
+EE,2014,Petrol,1
+ES,2014,Petrol,11
+FI,2021,Petrol,141
+GE,2025,Petrol,0
+IE,2018,Petrol,0
+IT,2020,Petrol,2
+LI,2015,Petrol,0
+LT,2019,Petrol,0
+LV,2021,Petrol,0
+NL,2024,Petrol,0
+NO,2021,Petrol,2
+PL,2024,Petrol,0
+SE,2015,Petrol,16
+TR,2018,Petrol,0
+UA,2020,Petrol,0
+UA,2021,Petrol,1
+UK,2021,Petrol,46
+UK,2023,Petrol,30
+BA,2016,Other alternative,0
+BA,2019,Other alternative,0
+CH,2014,Other alternative,1
+CH,2021,Other alternative,32
+CZ,2021,Other alternative,0
+ES,2016,Other alternative,3
+GE,2019,Other alternative,0
+HU,2024,Other alternative,0
+IT,2024,Other alternative,0
+LI,2017,Other alternative,0
+LI,2019,Other alternative,0
+LI,2023,Other alternative,0
+LV,2017,Other alternative,0
+LV,2022,Other alternative,0
+MT,2016,Other alternative,0
+MT,2020,Other alternative,0
+NL,2016,Other alternative,5
+PT,2020,Other alternative,0
+PT,2021,Other alternative,0
+PT,2022,Other alternative,0
+SE,2023,Other alternative,10
+XK,2018,Other alternative,0
+XK,2023,Other alternative,0
+DK,2021,Other alternative,1
+FR,2025,Other alternative,1013
+AL,2025,Diesel,914
+AT,2016,Diesel,4037
+CH,2015,Diesel,3155
+CH,2022,Diesel,2492
+DE,2019,Diesel,45692
+DE,2020,Diesel,34482
+ES,2021,Diesel,5776
+ES,2024,Diesel,9560
+FR,2017,Diesel,19331
+FR,2021,Diesel,17313
+FR,2022,Diesel,14453
+HR,2019,Diesel,2716
+HU,2019,Diesel,1554
+HU,2020,Diesel,764
+IS,2023,Diesel,389
+IS,2024,Diesel,368
+LI,2022,Diesel,16
+LV,2025,Diesel,312
+ME,2025,Diesel,115
+MT,2024,Diesel,74
+PT,2025,Diesel,1526
+SI,2023,Diesel,777
+TR,2020,Diesel,9010
+UA,2022,Diesel,1051
+UK,2017,Diesel,31454
+AT,2021,Battery electric,38
+BE,2013,Battery electric,0
+BE,2022,Battery electric,18
+BG,2024,Battery electric,0
+EL,2015,Battery electric,0
+EL,2021,Battery electric,0
+ES,2022,Battery electric,143
+FR,2015,Battery electric,1
+FR,2019,Battery electric,4
+IE,2016,Battery electric,0
+IT,2015,Battery electric,0
+IT,2019,Battery electric,6
+IT,2021,Battery electric,5
+LT,2018,Battery electric,0
+LT,2020,Battery electric,0
+LT,2021,Battery electric,0
+PT,2013,Battery electric,0
+SE,2013,Battery electric,0
+TR,2019,Battery electric,0
+AT,2016,Diesel hybrid,0
+CH,2015,Diesel hybrid,4
+CH,2022,Diesel hybrid,0
+DE,2019,Diesel hybrid,6
+DE,2020,Diesel hybrid,14
+ES,2021,Diesel hybrid,7
+ES,2024,Diesel hybrid,10
+FR,2017,Diesel hybrid,43
+FR,2021,Diesel hybrid,8
+FR,2022,Diesel hybrid,4
+HU,2019,Diesel hybrid,0
+HU,2020,Diesel hybrid,0
+IS,2023,Diesel hybrid,0
+IS,2024,Diesel hybrid,0
+LI,2022,Diesel hybrid,0
+LV,2025,Diesel hybrid,0
+ME,2025,Diesel hybrid,0
+MT,2024,Diesel hybrid,0
+PT,2025,Diesel hybrid,0
+SI,2023,Diesel hybrid,0
+TR,2020,Diesel hybrid,0
+UA,2022,Diesel hybrid,0
+UK,2017,Diesel hybrid,0
+AT,2017,Petrol hybrid,0
+BA,2014,Petrol hybrid,0
+CY,2017,Petrol hybrid,0
+CY,2025,Petrol hybrid,0
+DE,2017,Petrol hybrid,0
+DE,2021,Petrol hybrid,0
+DK,2024,Petrol hybrid,0
+EE,2021,Petrol hybrid,0
+GE,2024,Petrol hybrid,0
+LI,2024,Petrol hybrid,0
+MT,2022,Petrol hybrid,0
+SE,2018,Petrol hybrid,0
+XK,2024,Petrol hybrid,0
+AT,2014,Gas,2
+AT,2019,Gas,12
+CY,2022,Gas,0
+ES,2015,Gas,37
+ES,2018,Gas,174
+ES,2019,Gas,386
+FR,2014,Gas,52
+HU,2014,Gas,0
+HU,2023,Gas,0
+LI,2018,Gas,0
+LV,2018,Gas,1
+NO,2017,Gas,91
+SE,2014,Gas,78
+SI,2025,Gas,1
+SK,2025,Gas,2
+TR,2021,Gas,0
+TR,2025,Gas,0
+UA,2019,Gas,0
+EE,2016,Other alternative,0
+FR,2020,Other alternative,20
+SI,2024,Other alternative,0
+TR,2013,Other alternative,1
+IE,2021,Other alternative,3
+SK,2024,Other alternative,0
+BA,2013,Petrol,0
+BE,2019,Petrol,8
+CY,2014,Petrol,0
+EE,2015,Petrol,0
+EE,2024,Petrol,0
+EL,2025,Petrol,0
+FI,2023,Petrol,93
+HR,2018,Petrol,1
+HU,2025,Petrol,0
+LI,2014,Petrol,0
+LT,2023,Petrol,0
+LU,2014,Petrol,0
+LU,2016,Petrol,0
+LU,2017,Petrol,0
+LV,2019,Petrol,0
+ME,2021,Petrol,0
+NL,2015,Petrol,0
+NO,2019,Petrol,2
+PL,2025,Petrol,0
+PT,2019,Petrol,0
+PT,2023,Petrol,0
+SE,2025,Petrol,5
+UK,2016,Petrol,82
+AT,2020,Other alternative,0
+BA,2020,Other alternative,0
+CH,2023,Other alternative,3
+EL,2024,Other alternative,0
+FI,2024,Other alternative,10
+FR,2013,Other alternative,8
+HU,2018,Other alternative,0
+HU,2022,Other alternative,0
+LV,2014,Other alternative,0
+LV,2024,Other alternative,0
+NL,2014,Other alternative,5
+PL,2013,Other alternative,0
+SE,2016,Other alternative,23
+XK,2021,Other alternative,0
+FI,2019,Other alternative,31
+NL,2020,Other alternative,8
+SE,2024,Other alternative,1
+AT,2025,Diesel,3216
+BE,2023,Diesel,3834
+CH,2019,Diesel,3197
+CH,2024,Diesel,3190
+CH,2025,Diesel,2442
+DE,2025,Diesel,30961
+EE,2017,Diesel,333
+ES,2017,Diesel,6915
+FI,2025,Diesel,2534
+HR,2017,Diesel,2077
+HR,2021,Diesel,544
+LT,2022,Diesel,622
+LT,2025,Diesel,1118
+NL,2021,Diesel,3272
+NO,2023,Diesel,3071
+TR,2024,Diesel,23208
+UA,2023,Diesel,1707
+BA,2023,Battery electric,0
+BE,2015,Battery electric,0
+BG,2019,Battery electric,0
+CH,2020,Battery electric,31
+DK,2014,Battery electric,0
+EL,2023,Battery electric,2
+FR,2016,Battery electric,1
+FR,2024,Battery electric,403
+GE,2023,Battery electric,2
+HR,2016,Battery electric,0
+HU,2021,Battery electric,10
+IT,2018,Battery electric,0
+LT,2014,Battery electric,0
+LV,2016,Battery electric,0
+ME,2022,Battery electric,0
+MT,2019,Battery electric,0
+NL,2013,Battery electric,12
+NL,2025,Battery electric,1377
+NO,2018,Battery electric,10
+PT,2018,Battery electric,10
+SK,2021,Battery electric,0
+XK,2017,Battery electric,0
+XK,2022,Battery electric,0
+XK,2025,Battery electric,0
+AT,2025,Diesel hybrid,0
+BE,2023,Diesel hybrid,2
+CH,2019,Diesel hybrid,1
+CH,2024,Diesel hybrid,1
+CH,2025,Diesel hybrid,0
+DE,2025,Diesel hybrid,0
+EE,2017,Diesel hybrid,0
+ES,2017,Diesel hybrid,40
+FI,2025,Diesel hybrid,14
+HR,2017,Diesel hybrid,0
+LT,2022,Diesel hybrid,0
+LT,2025,Diesel hybrid,0
+NL,2021,Diesel hybrid,7
+NO,2023,Diesel hybrid,1
+TR,2024,Diesel hybrid,0
+UA,2023,Diesel hybrid,0
+BE,2017,Petrol hybrid,0
+CH,2018,Petrol hybrid,0
+CY,2023,Petrol hybrid,0
+CY,2024,Petrol hybrid,0
+DK,2022,Petrol hybrid,0
+ES,2025,Petrol hybrid,0
+FI,2016,Petrol hybrid,0
+GE,2020,Petrol hybrid,0
+HU,2015,Petrol hybrid,0
+IS,2025,Petrol hybrid,0
+IT,2025,Petrol hybrid,0
+LI,2013,Petrol hybrid,0
+LI,2020,Petrol hybrid,0
+LU,2022,Petrol hybrid,0
+LU,2023,Petrol hybrid,0
+ME,2016,Petrol hybrid,0
+MT,2013,Petrol hybrid,0
+MT,2021,Petrol hybrid,0
+MT,2025,Petrol hybrid,0
+PT,2017,Petrol hybrid,0
+SE,2017,Petrol hybrid,0
+SE,2019,Petrol hybrid,0
+BA,2013,Gas,0
+BE,2019,Gas,139
+CY,2014,Gas,0
+EE,2015,Gas,0
+EE,2024,Gas,0
+EL,2025,Gas,0
+FI,2023,Gas,96
+HR,2018,Gas,0
+LI,2014,Gas,0
+LT,2023,Gas,0
+LV,2019,Gas,0
+NL,2015,Gas,16
+NO,2019,Gas,126
+PL,2025,Gas,207
+PT,2019,Gas,17
+PT,2023,Gas,5
+SE,2025,Gas,576
+EE,2019,Other alternative,0
+EE,2020,Other alternative,0
+EE,2022,Other alternative,0
+HR,2025,Other alternative,0
+AT,2014,Petrol,0
+AT,2019,Petrol,0
+CY,2022,Petrol,0
+ES,2015,Petrol,5
+ES,2018,Petrol,4
+ES,2019,Petrol,7
+FR,2014,Petrol,1
+HU,2014,Petrol,0
+HU,2023,Petrol,0
+IT,2017,Petrol,1
+LI,2018,Petrol,0
+LT,2013,Petrol,1
+LT,2016,Petrol,0
+LV,2018,Petrol,0
+NO,2017,Petrol,2
+SE,2014,Petrol,33
+SI,2025,Petrol,0
+SK,2025,Petrol,0
+TR,2021,Petrol,0
+TR,2025,Petrol,0
+UA,2019,Petrol,0
+AT,2024,Other alternative,0
+BA,2024,Other alternative,0
+BE,2018,Other alternative,0
+BE,2021,Other alternative,0
+HU,2016,Other alternative,1
+IE,2014,Other alternative,0
+ME,2023,Other alternative,0
+MT,2014,Other alternative,0
+MT,2015,Other alternative,0
+BE,2025,Other alternative,0
+LU,2025,Other alternative,0
+UA,2025,Other alternative,1
+AT,2014,Diesel,3599
+AT,2019,Diesel,4603
+CY,2022,Diesel,83
+ES,2015,Diesel,5894
+ES,2018,Diesel,8661
+ES,2019,Diesel,8477
+FR,2014,Diesel,13781
+HU,2014,Diesel,711
+HU,2023,Diesel,1105
+IT,2017,Diesel,5611
+LI,2018,Diesel,12
+LT,2013,Diesel,518
+LT,2016,Diesel,641
+LV,2018,Diesel,392
+NO,2017,Diesel,3932
+SE,2014,Diesel,4725
+SI,2025,Diesel,740
+SK,2025,Diesel,920
+TR,2021,Diesel,13139
+TR,2025,Diesel,20496
+UA,2019,Diesel,1707
+BA,2018,Battery electric,0
+CH,2016,Battery electric,5
+CY,2015,Battery electric,0
+CY,2020,Battery electric,0
+CZ,2014,Battery electric,0
+CZ,2015,Battery electric,0
+CZ,2020,Battery electric,12
+DK,2015,Battery electric,0
+EL,2022,Battery electric,0
+ES,2020,Battery electric,7
+FI,2020,Battery electric,5
+GE,2018,Battery electric,0
+HU,2013,Battery electric,0
+IE,2015,Battery electric,0
+IE,2017,Battery electric,0
+IE,2022,Battery electric,5
+IT,2014,Battery electric,0
+IT,2023,Battery electric,46
+LT,2015,Battery electric,0
+LU,2018,Battery electric,0
+LU,2019,Battery electric,0
+LU,2024,Battery electric,4
+LV,2015,Battery electric,0
+LV,2020,Battery electric,0
+MT,2017,Battery electric,0
+NL,2017,Battery electric,13
+NL,2019,Battery electric,29
+NO,2020,Battery electric,16
+NO,2022,Battery electric,359
+NO,2024,Battery electric,643
+NO,2025,Battery electric,809
+PL,2015,Battery electric,2
+PT,2024,Battery electric,37
+RO,2018,Battery electric,0
+SI,2017,Battery electric,0
+SI,2019,Battery electric,0
+TR,2022,Battery electric,1
+UA,2024,Battery electric,3
+UK,2022,Battery electric,783
+AT,2014,Diesel hybrid,0
+AT,2019,Diesel hybrid,0
+CY,2022,Diesel hybrid,0
+ES,2015,Diesel hybrid,2
+ES,2018,Diesel hybrid,86
+ES,2019,Diesel hybrid,89
+FR,2014,Diesel hybrid,8
+HU,2014,Diesel hybrid,0
+HU,2023,Diesel hybrid,0
+LI,2018,Diesel hybrid,0
+LV,2018,Diesel hybrid,0
+NO,2017,Diesel hybrid,3
+SE,2014,Diesel hybrid,4
+SI,2025,Diesel hybrid,0
+SK,2025,Diesel hybrid,0
+TR,2021,Diesel hybrid,0
+UA,2019,Diesel hybrid,0
+BA,2017,Petrol hybrid,0
+BE,2016,Petrol hybrid,0
+CY,2013,Petrol hybrid,0
+CY,2016,Petrol hybrid,0
+EE,2014,Petrol hybrid,0
+ES,2014,Petrol hybrid,0
+FI,2021,Petrol hybrid,0
+GE,2025,Petrol hybrid,0
+IE,2018,Petrol hybrid,0
+LI,2015,Petrol hybrid,0
+LT,2019,Petrol hybrid,0
+LV,2021,Petrol hybrid,0
+NL,2024,Petrol hybrid,0
+NO,2021,Petrol hybrid,0
+PL,2024,Petrol hybrid,0
+SE,2015,Petrol hybrid,0
+TR,2018,Petrol hybrid,0
+UA,2020,Petrol hybrid,0
+UA,2021,Petrol hybrid,0
+AT,2016,Gas,2
+CH,2015,Gas,11
+CH,2022,Gas,27
+DE,2019,Gas,168
+DE,2020,Gas,166
+ES,2021,Gas,298
+ES,2024,Gas,635
+FR,2017,Gas,282
+FR,2021,Gas,589
+FR,2022,Gas,1158
+HR,2019,Gas,0
+HU,2019,Gas,0
+HU,2020,Gas,0
+IS,2022,Gas,1
+IS,2023,Gas,14
+IS,2024,Gas,7
+LI,2022,Gas,0
+LV,2025,Gas,26
+MT,2024,Gas,0
+PL,2017,Gas,0
+PT,2025,Gas,26
+SI,2023,Gas,0
+TR,2020,Gas,0
+UA,2022,Gas,0
+AT,2013,Other alternative,0
+AT,2015,Other alternative,0
+EE,2013,Other alternative,0
+EE,2023,Other alternative,0
+EE,2025,Other alternative,0
+IS,2018,Other alternative,1
+SK,2023,Other alternative,0
+UK,2015,Other alternative,0
+AT,2025,Petrol,0
+BE,2023,Petrol,6
+CH,2019,Petrol,0
+CH,2025,Petrol,0
+DE,2025,Petrol,20
+EE,2017,Petrol,0
+ES,2017,Petrol,10
+FI,2025,Petrol,15
+HR,2017,Petrol,2
+IE,2013,Petrol,0
+LT,2022,Petrol,0
+LT,2025,Petrol,0
+NL,2021,Petrol,2
+NO,2023,Petrol,3
+UA,2023,Petrol,0
+AL,2019,Other alternative,1
+AT,2022,Other alternative,1
+AT,2023,Other alternative,0
+BA,2015,Other alternative,0
+BA,2021,Other alternative,0
+CY,2018,Other alternative,0
+ES,2023,Other alternative,98
+FI,2014,Other alternative,12
+GE,2017,Other alternative,0
+GE,2021,Other alternative,0
+LI,2021,Other alternative,0
+LU,2020,Other alternative,0
+NL,2023,Other alternative,8
+PL,2014,Other alternative,0
+SE,2020,Other alternative,28
+TR,2017,Other alternative,2
+TR,2023,Other alternative,0
+BA,2025,Other alternative,0
+CZ,2025,Other alternative,0
+DK,2023,Other alternative,4
+FI,2017,Other alternative,22
+BA,2017,Diesel,83
+BE,2016,Diesel,3786
+CY,2013,Diesel,52
+CY,2016,Diesel,58
+EE,2014,Diesel,246
+ES,2014,Diesel,4954
+FI,2021,Diesel,3297
+GE,2025,Diesel,349
+IE,2018,Diesel,981
+IT,2020,Diesel,5411
+LI,2015,Diesel,19
+LT,2019,Diesel,822
+LV,2021,Diesel,343
+NL,2024,Diesel,6074
+NO,2021,Diesel,4266
+PL,2024,Diesel,7191
+SE,2015,Diesel,4894
+TR,2018,Diesel,12144
+UA,2020,Diesel,2514
+UA,2021,Diesel,3168
+UK,2021,Diesel,26023
+UK,2023,Diesel,27990
+AT,2018,Battery electric,10
+BA,2022,Battery electric,0
+BE,2024,Battery electric,93
+BG,2013,Battery electric,0
+CH,2013,Battery electric,1
+CY,2021,Battery electric,0
+CZ,2023,Battery electric,10
+DE,2014,Battery electric,0
+DE,2022,Battery electric,661
+DE,2023,Battery electric,1698
+DE,2024,Battery electric,2978
+EE,2018,Battery electric,0
+FI,2018,Battery electric,0
+FR,2023,Battery electric,456
+HR,2013,Battery electric,0
+HR,2020,Battery electric,0
+HR,2024,Battery electric,1
+IE,2024,Battery electric,13
+LT,2024,Battery electric,4
+LU,2013,Battery electric,0
+LV,2013,Battery electric,0
+MT,2018,Battery electric,0
+MT,2023,Battery electric,0
+RO,2024,Battery electric,14
+SE,2021,Battery electric,38
+SE,2022,Battery electric,115
+SK,2014,Battery electric,0
+BA,2017,Diesel hybrid,0
+BE,2016,Diesel hybrid,1
+CY,2013,Diesel hybrid,0
+CY,2016,Diesel hybrid,0
+EE,2014,Diesel hybrid,0
+ES,2014,Diesel hybrid,0
+FI,2021,Diesel hybrid,0
+GE,2025,Diesel hybrid,0
+IE,2018,Diesel hybrid,0
+LI,2015,Diesel hybrid,0
+LV,2021,Diesel hybrid,0
+NL,2024,Diesel hybrid,18
+NO,2021,Diesel hybrid,0
+PL,2024,Diesel hybrid,1
+SE,2015,Diesel hybrid,1
+TR,2018,Diesel hybrid,0
+UA,2020,Diesel hybrid,0
+UA,2021,Diesel hybrid,0
+AT,2014,Petrol hybrid,0
+AT,2019,Petrol hybrid,0
+CY,2022,Petrol hybrid,0
+ES,2015,Petrol hybrid,0
+ES,2018,Petrol hybrid,0
+ES,2019,Petrol hybrid,0
+FR,2014,Petrol hybrid,2
+HU,2014,Petrol hybrid,0
+HU,2023,Petrol hybrid,0
+LI,2018,Petrol hybrid,0
+LT,2016,Petrol hybrid,0
+LV,2018,Petrol hybrid,0
+NO,2017,Petrol hybrid,0
+SE,2014,Petrol hybrid,0
+SI,2025,Petrol hybrid,0
+SK,2025,Petrol hybrid,0
+TR,2021,Petrol hybrid,0
+UA,2019,Petrol hybrid,0
+AT,2017,Gas,5
+BA,2014,Gas,0
+CY,2017,Gas,0
+CY,2025,Gas,0
+DE,2017,Gas,28
+DE,2021,Gas,397
+DK,2024,Gas,8
+EE,2021,Gas,3
+FI,2013,Gas,0
+GE,2024,Gas,0
+IE,2019,Gas,0
+LI,2024,Gas,0
+MT,2022,Gas,0
+SE,2018,Gas,130
+XK,2024,Gas,0
+FI,2015,Other alternative,4
+FR,2018,Other alternative,16
+NO,2016,Other alternative,1
+UK,2018,Other alternative,0
+BE,2017,Petrol,4
+CH,2018,Petrol,6
+CY,2023,Petrol,0
+CY,2024,Petrol,0
+DK,2022,Petrol,0
+ES,2025,Petrol,0
+FI,2016,Petrol,34
+GE,2020,Petrol,2
+HU,2015,Petrol,2
+IS,2025,Petrol,0
+IT,2025,Petrol,1
+LI,2013,Petrol,0
+LI,2020,Petrol,0
+LU,2022,Petrol,0
+LU,2023,Petrol,0
+ME,2016,Petrol,0
+MT,2013,Petrol,1
+MT,2021,Petrol,0
+MT,2025,Petrol,0
+NL,2018,Petrol,0
+NL,2022,Petrol,0
+PT,2017,Petrol,0
+SE,2017,Petrol,16
+SE,2019,Petrol,26
+BA,2014,Other alternative,0
+CY,2017,Other alternative,0
+FI,2013,Other alternative,19
+GE,2024,Other alternative,0
+IE,2019,Other alternative,0
+LI,2024,Other alternative,0
+MT,2022,Other alternative,0
+SE,2018,Other alternative,12
+XK,2024,Other alternative,0
+CY,2025,Other alternative,0
+DE,2017,Other alternative,28
+DK,2024,Other alternative,2
+BA,2023,Diesel,288
+BE,2015,Diesel,3557
+CH,2020,Diesel,2850
+EL,2023,Diesel,447
+FR,2016,Diesel,16908
+FR,2024,Diesel,16851
+GE,2023,Diesel,705
+HR,2016,Diesel,1892
+HU,2021,Diesel,953
+IS,2021,Diesel,507
+IT,2018,Diesel,6001
+LT,2014,Diesel,367
+LV,2016,Diesel,284
+ME,2022,Diesel,39
+MT,2019,Diesel,66
+NL,2013,Diesel,3513
+NL,2025,Diesel,1633
+NO,2018,Diesel,4104
+PT,2018,Diesel,1310
+XK,2017,Diesel,357
+XK,2022,Diesel,1806
+XK,2025,Diesel,3521
+AT,2025,Battery electric,261
+BE,2023,Battery electric,54
+CH,2019,Battery electric,13
+CH,2024,Battery electric,458
+CH,2025,Battery electric,662
+CZ,2019,Battery electric,0
+DE,2025,Battery electric,4193
+EE,2017,Battery electric,0
+ES,2017,Battery electric,3
+FI,2025,Battery electric,90
+HR,2017,Battery electric,0
+HR,2021,Battery electric,0
+IE,2013,Battery electric,0
+LT,2022,Battery electric,2
+LT,2025,Battery electric,2
+NL,2021,Battery electric,46
+NO,2023,Battery electric,642
+PL,2016,Battery electric,0
+RO,2015,Battery electric,0
+RO,2017,Battery electric,0
+SK,2020,Battery electric,0
+TR,2024,Battery electric,18
+UA,2023,Battery electric,1
+BA,2023,Diesel hybrid,0
+BE,2015,Diesel hybrid,1
+CH,2020,Diesel hybrid,0
+EL,2023,Diesel hybrid,0
+FR,2016,Diesel hybrid,47
+FR,2024,Diesel hybrid,25
+GE,2023,Diesel hybrid,0
+HU,2021,Diesel hybrid,0
+LV,2016,Diesel hybrid,0
+MT,2019,Diesel hybrid,0
+NL,2013,Diesel hybrid,2
+NL,2025,Diesel hybrid,0
+NO,2018,Diesel hybrid,2
+PT,2018,Diesel hybrid,4
+XK,2022,Diesel hybrid,0
+XK,2025,Diesel hybrid,0
+BA,2016,Petrol hybrid,0
+BA,2019,Petrol hybrid,0
+CH,2014,Petrol hybrid,0
+CH,2021,Petrol hybrid,0
+DK,2021,Petrol hybrid,0
+EE,2016,Petrol hybrid,0
+ES,2016,Petrol hybrid,0
+FR,2025,Petrol hybrid,0
+GE,2019,Petrol hybrid,0
+HU,2024,Petrol hybrid,0
+IE,2021,Petrol hybrid,0
+IT,2024,Petrol hybrid,0
+LI,2017,Petrol hybrid,0
+LI,2019,Petrol hybrid,0
+LI,2023,Petrol hybrid,0
+LV,2017,Petrol hybrid,0
+LV,2022,Petrol hybrid,0
+MT,2016,Petrol hybrid,0
+MT,2020,Petrol hybrid,0
+PT,2020,Petrol hybrid,0
+PT,2021,Petrol hybrid,0
+PT,2022,Petrol hybrid,0
+SE,2023,Petrol hybrid,0
+SI,2024,Petrol hybrid,0
+SK,2024,Petrol hybrid,0
+XK,2018,Petrol hybrid,0
+XK,2023,Petrol hybrid,0
+AL,2019,Gas,0
+AT,2022,Gas,8
+AT,2023,Gas,10
+BA,2015,Gas,0
+BA,2021,Gas,0
+BA,2025,Gas,0
+CY,2018,Gas,0
+CZ,2025,Gas,33
+DK,2023,Gas,32
+ES,2023,Gas,871
+FI,2014,Gas,0
+FI,2015,Gas,0
+FI,2017,Gas,7
+FR,2018,Gas,366
+GE,2017,Gas,0
+GE,2021,Gas,0
+IE,2025,Gas,2
+LI,2021,Gas,0
+LU,2020,Gas,0
+NL,2023,Gas,8
+NO,2016,Gas,79
+PL,2014,Gas,0
+SE,2020,Gas,226
+TR,2017,Gas,0
+TR,2023,Gas,1
+AT,2017,Other alternative,0
+DE,2021,Other alternative,96
+EE,2021,Other alternative,0
+BA,2018,Petrol,0
+CH,2016,Petrol,14
+CY,2015,Petrol,0
+CY,2020,Petrol,0
+ES,2020,Petrol,7
+FI,2020,Petrol,131
+GE,2018,Petrol,7
+HU,2013,Petrol,0
+IE,2017,Petrol,0
+IE,2022,Petrol,0
+IS,2019,Petrol,4
+IT,2023,Petrol,3
+LT,2015,Petrol,0
+LU,2018,Petrol,0
+LU,2019,Petrol,0
+LU,2024,Petrol,0
+LV,2015,Petrol,0
+LV,2020,Petrol,0
+MT,2017,Petrol,0
+NL,2017,Petrol,1
+NL,2019,Petrol,1
+NO,2020,Petrol,4
+NO,2022,Petrol,1
+NO,2024,Petrol,0
+NO,2025,Petrol,1
+PT,2024,Petrol,0
+TR,2022,Petrol,0
+UA,2024,Petrol,1
+UK,2022,Petrol,38
+DE,2021,Unclassified,0
+NL,2014,Unclassified,0
+FR,2022,Unclassified,0
+PT,2025,Unclassified,0
+BA,2019,Unclassified,0
+CH,2021,Unclassified,0
+HU,2024,Unclassified,0
+EL,2017,Unclassified,392
+FI,2016,Unclassified,0
+PL,2023,Unclassified,7647
+SE,2019,Unclassified,0
+EE,2023,Unclassified,0
+UA,2025,Unclassified,0
+DE,2022,Unclassified,0
+IS,2022,Unclassified,466
+SI,2020,Unclassified,439
+FI,2020,Unclassified,0
+IE,2015,Unclassified,655
+NL,2017,Unclassified,0
+PT,2024,Unclassified,0
+GE,2017,Unclassified,0
+HR,2022,Unclassified,0
+IT,2013,Unclassified,2
+LU,2016,Unclassified,19
+FI,2025,Unclassified,2
+SI,2025,Unclassified,0
+SK,2017,Unclassified,818
+SK,2019,Unclassified,597
+IS,2019,Unclassified,0
+BG,2015,Unclassified,10900
+RO,2020,Unclassified,1455
+SK,2025,Unclassified,0
+CZ,2017,Unclassified,11074
+ES,2017,Unclassified,300
+TR,2014,Unclassified,0
+PT,2013,Unclassified,628
+EL,2022,Unclassified,595
+RO,2018,Unclassified,1075
+LV,2013,Unclassified,3491
+RO,2017,Unclassified,651
+RS,2024,Unclassified,1248
+RS,2016,Unclassified,2027
+MT,2019,Unclassified,0
+DK,2024,Unclassified,0
+FI,2024,Unclassified,0
+ES,2021,Unclassified,0
+HU,2019,Unclassified,0
+UA,2022,Unclassified,0
+SE,2015,Unclassified,72
+UK,2021,Unclassified,0
+LT,2014,Unclassified,0
+LV,2023,Unclassified,0
+UK,2024,Unclassified,0
+DK,2021,Unclassified,0
+DK,2022,Unclassified,0
+PT,2017,Unclassified,0
+LU,2025,Unclassified,0
+DE,2016,Unclassified,43841
+LU,2024,Unclassified,0
+SE,2020,Unclassified,2
+HR,2018,Unclassified,0
+PL,2019,Unclassified,6790
+BE,2023,Unclassified,0
+CH,2025,Unclassified,0
+LT,2025,Unclassified,0
+NO,2023,Unclassified,0
+PL,2016,Unclassified,5578
+CZ,2022,Unclassified,8984
+NO,2017,Unclassified,0
+HR,2020,Unclassified,0
+DK,2018,Unclassified,2200
+DK,2015,Unclassified,1835
+SI,2017,Unclassified,531
+NL,2013,Unclassified,0
+BG,2022,Unclassified,529
+RO,2016,Unclassified,935
+BE,2020,Unclassified,86
+XK,2019,Unclassified,0
+ES,2016,Unclassified,0
+IT,2024,Unclassified,3
+UK,2015,Unclassified,0
+CH,2013,Unclassified,0
+TR,2015,Unclassified,0
+TR,2019,Unclassified,0
+PT,2016,Unclassified,2094
+BA,2018,Unclassified,0
+CH,2016,Unclassified,0
+IT,2023,Unclassified,1
+LV,2020,Unclassified,0
+GE,2021,Unclassified,0
+LI,2021,Unclassified,0
+AL,2019,Unclassified,0
+EL,2025,Unclassified,-3
+PL,2025,Unclassified,0
+HR,2023,Unclassified,0
+RO,2013,Unclassified,1520
+BG,2024,Unclassified,641
+CZ,2020,Unclassified,8378
+RS,2018,Unclassified,2395
+RS,2019,Unclassified,1334
+RS,2022,Unclassified,1860
+BA,2023,Unclassified,0
+HU,2021,Unclassified,0
+BA,2014,Unclassified,0
+LI,2024,Unclassified,0
+CH,2023,Unclassified,0
+IT,2016,Unclassified,0
+XK,2021,Unclassified,0
+CH,2015,Unclassified,0
+ES,2024,Unclassified,0
+CY,2016,Unclassified,0
+LV,2021,Unclassified,0
+UA,2021,Unclassified,0
+IT,2018,Unclassified,-6
+FR,2020,Unclassified,0
+CY,2023,Unclassified,0
+GE,2020,Unclassified,0
+LI,2020,Unclassified,0
+LU,2023,Unclassified,0
+NL,2018,Unclassified,0
+AT,2015,Unclassified,0
+AT,2024,Unclassified,0
+MT,2015,Unclassified,0
+FR,2017,Unclassified,0
+BA,2022,Unclassified,0
+MT,2018,Unclassified,0
+FR,2015,Unclassified,0
+IT,2015,Unclassified,13
+CY,2014,Unclassified,0
+EL,2019,Unclassified,377
+NL,2015,Unclassified,0
+IS,2021,Unclassified,0
+NL,2021,Unclassified,0
+UA,2023,Unclassified,0
+HU,2023,Unclassified,0
+LT,2016,Unclassified,0
+SI,2021,Unclassified,614
+SI,2018,Unclassified,704
+SK,2018,Unclassified,799
+CZ,2014,Unclassified,9464
+BG,2013,Unclassified,8075
+DE,2014,Unclassified,41074
+HR,2013,Unclassified,1020
+CZ,2019,Unclassified,11095
+XK,2025,Unclassified,0
+MT,2022,Unclassified,0
+AT,2020,Unclassified,0
+BG,2020,Unclassified,526
+FI,2021,Unclassified,0
+LI,2015,Unclassified,0
+GE,2022,Unclassified,0
+LV,2017,Unclassified,0
+CZ,2016,Unclassified,12293
+HU,2015,Unclassified,0
+AT,2018,Unclassified,0
+BE,2022,Unclassified,52
+ES,2022,Unclassified,0
+LU,2014,Unclassified,7
+NO,2019,Unclassified,1
+PT,2023,Unclassified,0
+LI,2018,Unclassified,0
+RO,2024,Unclassified,0
+RO,2014,Unclassified,622
+EL,2021,Unclassified,500
+HR,2021,Unclassified,0
+CZ,2015,Unclassified,11147
+IS,2018,Unclassified,742
+RO,2015,Unclassified,751
+SK,2020,Unclassified,310
+RS,2017,Unclassified,2396
+BA,2020,Unclassified,0
+EL,2024,Unclassified,0
+RO,2025,Unclassified,0
+SI,2023,Unclassified,0
+UA,2020,Unclassified,0
+FI,2022,Unclassified,0
+LT,2017,Unclassified,0
+MT,2020,Unclassified,0
+XK,2023,Unclassified,0
+CZ,2023,Unclassified,0
+HR,2024,Unclassified,0
+ME,2018,Unclassified,0
+CZ,2025,Unclassified,0
+BA,2013,Unclassified,0
+EE,2024,Unclassified,0
+EE,2017,Unclassified,0
+ES,2018,Unclassified,0
+DK,2013,Unclassified,1769
+EL,2016,Unclassified,282
+RO,2021,Unclassified,1685
+DK,2016,Unclassified,2135
+EL,2015,Unclassified,402
+RS,2015,Unclassified,1500
+IS,2016,Unclassified,285
+EL,2023,Unclassified,0
+ME,2022,Unclassified,0
+PT,2018,Unclassified,0
+MT,2024,Unclassified,0
+EE,2014,Unclassified,0
+ES,2014,Unclassified,0
+IT,2020,Unclassified,0
+NL,2024,Unclassified,0
+HU,2017,Unclassified,0
+LI,2019,Unclassified,0
+NL,2016,Unclassified,0
+PT,2020,Unclassified,0
+LU,2022,Unclassified,0
+BA,2024,Unclassified,0
+MT,2014,Unclassified,0
+FI,2018,Unclassified,59
+ME,2017,Unclassified,0
+NO,2024,Unclassified,0
+NO,2025,Unclassified,1
+LU,2015,Unclassified,5
+SE,2014,Unclassified,1
+IT,2014,Unclassified,4
+DE,2015,Unclassified,42077
+RS,2023,Unclassified,1438
+FR,2024,Unclassified,0
+GE,2023,Unclassified,0
+LV,2016,Unclassified,0
+EE,2022,Unclassified,0
+FR,2013,Unclassified,1
+LV,2014,Unclassified,0
+BA,2017,Unclassified,0
+LT,2019,Unclassified,0
+TR,2018,Unclassified,0
+UK,2023,Unclassified,0
+BE,2014,Unclassified,-4
+LV,2022,Unclassified,0
+XK,2018,Unclassified,0
+LI,2013,Unclassified,0
+MT,2021,Unclassified,0
+BE,2024,Unclassified,0
+LU,2013,Unclassified,6
+UA,2024,Unclassified,0
+UK,2022,Unclassified,0
+DK,2023,Unclassified,0
+FI,2015,Unclassified,0
+LI,2014,Unclassified,0
+SE,2025,Unclassified,1
+HU,2014,Unclassified,0
+TR,2025,Unclassified,1
+SK,2016,Unclassified,833
+IE,2016,Unclassified,946
+SI,2015,Unclassified,551
+RO,2022,Unclassified,1308
+XK,2022,Unclassified,0
+AT,2017,Unclassified,0
+HU,2018,Unclassified,0
+HU,2020,Unclassified,0
+IS,2024,Unclassified,0
+LV,2025,Unclassified,0
+GE,2025,Unclassified,0
+FR,2016,Unclassified,114
+CH,2017,Unclassified,0
+FR,2025,Unclassified,12
+NL,2022,Unclassified,0
+IE,2014,Unclassified,471
+AL,2025,Unclassified,0
+EE,2018,Unclassified,0
+NO,2022,Unclassified,0
+TR,2022,Unclassified,0
+ES,2023,Unclassified,0
+LU,2020,Unclassified,0
+LT,2021,Unclassified,488
+ME,2021,Unclassified,0
+IE,2013,Unclassified,328
+LT,2022,Unclassified,0
+AT,2019,Unclassified,0
+CY,2022,Unclassified,0
+LV,2018,Unclassified,0
+DE,2013,Unclassified,45800
+EL,2013,Unclassified,304
+SI,2016,Unclassified,729
+SI,2022,Unclassified,571
+LI,2025,Unclassified,12
+BE,2015,Unclassified,33
+CH,2020,Unclassified,0
+XK,2017,Unclassified,0
+EL,2018,Unclassified,309
+SE,2024,Unclassified,0
+PL,2024,Unclassified,0
+IE,2020,Unclassified,0
+LI,2016,Unclassified,0
+GE,2019,Unclassified,0
+HU,2016,Unclassified,0
+IT,2019,Unclassified,0
+SE,2013,Unclassified,0
+BE,2019,Unclassified,-29
+HR,2014,Unclassified,1849
+TR,2021,Unclassified,0
+DK,2019,Unclassified,2257
+PL,2018,Unclassified,6729
+SK,2015,Unclassified,590
+IT,2017,Unclassified,14
+TR,2016,Unclassified,0
+ME,2016,Unclassified,0
+DK,2014,Unclassified,1564
+XK,2024,Unclassified,0
+EE,2019,Unclassified,0
+SI,2014,Unclassified,484
+AT,2016,Unclassified,0
+DE,2019,Unclassified,0
+UK,2017,Unclassified,0
+CY,2019,Unclassified,0
+EE,2016,Unclassified,0
+PT,2022,Unclassified,0
+SE,2023,Unclassified,0
+CH,2018,Unclassified,0
+CY,2024,Unclassified,0
+IS,2025,Unclassified,0
+BE,2018,Unclassified,0
+FR,2023,Unclassified,0
+NO,2020,Unclassified,0
+BA,2021,Unclassified,0
+LU,2017,Unclassified,9
+CH,2024,Unclassified,0
+ES,2019,Unclassified,0
+HR,2015,Unclassified,0
+RO,2023,Unclassified,1902
+LT,2015,Unclassified,0
+EL,2014,Unclassified,337
+DK,2017,Unclassified,2075
+BG,2019,Unclassified,792
+RS,2020,Unclassified,1326
+NO,2018,Unclassified,0
+CY,2017,Unclassified,0
+DE,2017,Unclassified,0
+BG,2023,Unclassified,745
+NL,2020,Unclassified,0
+IS,2023,Unclassified,0
+LI,2022,Unclassified,0
+TR,2020,Unclassified,0
+IE,2018,Unclassified,0
+NO,2021,Unclassified,0
+DK,2025,Unclassified,0
+CH,2014,Unclassified,0
+MT,2016,Unclassified,0
+PT,2021,Unclassified,0
+TR,2013,Unclassified,0
+RO,2019,Unclassified,1528
+BE,2021,Unclassified,101
+SK,2023,Unclassified,0
+FR,2019,Unclassified,0
+LT,2018,Unclassified,0
+ME,2019,Unclassified,0
+CZ,2018,Unclassified,10921
+CY,2015,Unclassified,0
+MT,2017,Unclassified,0
+AT,2023,Unclassified,0
+BA,2015,Unclassified,0
+BA,2025,Unclassified,0
+CY,2018,Unclassified,0
+TR,2017,Unclassified,0
+LT,2023,Unclassified,0
+LV,2019,Unclassified,0
+CH,2019,Unclassified,0
+AT,2014,Unclassified,0
+SK,2022,Unclassified,428
+FI,2013,Unclassified,3489
+NL,2025,Unclassified,0
+FI,2019,Unclassified,0
+HR,2025,Unclassified,0
+LV,2024,Unclassified,0
+PL,2013,Unclassified,5462
+HR,2016,Unclassified,0
+FR,2021,Unclassified,0
+IE,2021,Unclassified,0
+LI,2017,Unclassified,0
+SK,2024,Unclassified,0
+SK,2013,Unclassified,679
+EE,2025,Unclassified,0
+CY,2021,Unclassified,0
+DE,2023,Unclassified,0
+MT,2023,Unclassified,0
+IE,2022,Unclassified,0
+LV,2015,Unclassified,0
+PL,2015,Unclassified,5422
+UK,2016,Unclassified,3
+BG,2017,Unclassified,416
+IE,2024,Unclassified,0
+PL,2021,Unclassified,6660
+IE,2019,Unclassified,0
+HU,2022,Unclassified,0
+SE,2016,Unclassified,67
+DE,2020,Unclassified,0
+CZ,2024,Unclassified,0
+LU,2021,Unclassified,0
+BA,2016,Unclassified,0
+LI,2023,Unclassified,0
+ES,2025,Unclassified,0
+MT,2013,Unclassified,0
+MT,2025,Unclassified,0
+EE,2013,Unclassified,0
+IE,2023,Unclassified,0
+ME,2023,Unclassified,0
+BE,2013,Unclassified,-34
+IT,2021,Unclassified,0
+CY,2020,Unclassified,0
+AT,2022,Unclassified,0
+FR,2018,Unclassified,0
+TR,2023,Unclassified,0
+HR,2017,Unclassified,0
+FR,2014,Unclassified,0
+SI,2013,Unclassified,416
+ME,2024,Unclassified,0
+LT,2013,Unclassified,0
+BG,2016,Unclassified,388
+SI,2019,Unclassified,740
+IS,2020,Unclassified,425
+IS,2017,Unclassified,814
+CY,2025,Unclassified,0
+GE,2024,Unclassified,0
+SE,2018,Unclassified,14
+CH,2022,Unclassified,0
+BE,2016,Unclassified,53
+DE,2018,Unclassified,0
+PL,2017,Unclassified,6596
+BE,2017,Unclassified,0
+DK,2020,Unclassified,1952
+IT,2025,Unclassified,4
+PT,2014,Unclassified,1524
+SE,2017,Unclassified,5
+AT,2013,Unclassified,0
+BE,2025,Unclassified,-71
+IT,2022,Unclassified,5
+DE,2024,Unclassified,0
+LT,2024,Unclassified,0
+ES,2020,Unclassified,0
+HU,2013,Unclassified,0
+LU,2019,Unclassified,0
+FI,2017,Unclassified,0
+UK,2018,Unclassified,12
+EE,2015,Unclassified,0
+FI,2023,Unclassified,0
+PT,2019,Unclassified,0
+LT,2020,Unclassified,935
+AT,2025,Unclassified,0
+DE,2025,Unclassified,0
+TR,2024,Unclassified,0
+ES,2015,Unclassified,0
+LU,2018,Unclassified,21
+EL,2020,Unclassified,494
+PL,2022,Unclassified,7375
+RS,2021,Unclassified,1570
+EE,2021,Unclassified,0
+ME,2020,Unclassified,0
+EE,2020,Unclassified,0
+PL,2020,Unclassified,4968
+PT,2015,Unclassified,1894
+HR,2019,Unclassified,0
+ME,2025,Unclassified,0
+CY,2013,Unclassified,0
+SI,2024,Unclassified,0
+SE,2021,Unclassified,15
+SE,2022,Unclassified,0
+AT,2021,Unclassified,0
+BG,2018,Unclassified,608
+CZ,2013,Unclassified,8672
+GE,2018,Unclassified,2
+IE,2017,Unclassified,0
+NL,2019,Unclassified,-2
+IE,2025,Unclassified,-3
+NL,2023,Unclassified,0
+NO,2016,Unclassified,0
+ES,2013,Unclassified,4800
+FI,2014,Unclassified,2548
+PL,2014,Unclassified,4825
+CZ,2021,Unclassified,7863
+UA,2019,Unclassified,0
+BG,2021,Unclassified,677
+BG,2014,Unclassified,9059
+SK,2021,Unclassified,456
+SK,2014,Unclassified,657
+RS,2025,Unclassified,985

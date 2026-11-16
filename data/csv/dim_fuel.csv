@@ -1,0 +1,17 @@
+mot_nrg,fuel_name,fuel_group,is_parent,fuel_level
+TOTAL,Total,Total,true,total
+PET,Petrol,Subtotal,true,subtotal
+PET_X_HYB,Petrol (excluding hybrids),Petrol,false,leaf
+ELC_PET_HYB,Hybrid electric-petrol,Petrol hybrid,false,leaf
+DIE,Diesel,Subtotal,true,subtotal
+DIE_X_HYB,Diesel (excluding hybrids),Diesel,false,leaf
+ELC_DIE_HYB,Hybrid diesel-electric,Diesel hybrid,false,leaf
+ALT,Alternative energy,Subtotal,true,subtotal
+ELC,Electricity,Battery electric,false,leaf
+BIOETH,Bioethanol,Other alternative,false,leaf
+BIODIE,Biodiesel,Other alternative,false,leaf
+GAS,Natural gas,Gas,false,leaf
+CNG,Compressed natural gas (CNG),Subtotal,true,subtotal
+LNG,Liquefied natural gas (LNG),Subtotal,true,subtotal
+LPG,Liquefied petroleum gases (LPG),Other alternative,false,leaf
+OTH,Other,Other alternative,false,leaf

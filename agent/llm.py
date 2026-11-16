@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import time
 from dataclasses import dataclass, field
 from typing import Any, Callable, Protocol
@@ -160,6 +161,8 @@ def parse_text_tool_calls(text: str, tool_names: set[str]) -> list[ToolCall]:
     """Find JSON objects like {"name": "run_sql", "arguments": {...}} in free text."""
     calls: list[ToolCall] = []
     decoder = json.JSONDecoder()
+    # Small models sometimes leave the tool name unquoted: {"name": run_sql, ...}. Quote it.
+    text = re.sub(r'("name"\s*:\s*)([A-Za-z_]\w*)(\s*[,}])', r'\1"\2"\3', text)
     i = 0
     while True:
         i = text.find("{", i)

@@ -19,6 +19,9 @@ def test_parse_text_tool_calls():
     assert [c.name for c in calls] == ["run_sql", "final_answer"]
     assert calls[0].arguments == {"sql": "select 1"} and calls[1].arguments["query_id"] == "q1"
     assert parse_text_tool_calls("no calls here {not json}", NAMES) == []
+    # Unquoted tool name, as written by qwen2.5-coder:3b.
+    calls = parse_text_tool_calls('{"name": run_sql, "arguments": {"sql": "select 1"}}', NAMES)
+    assert [c.name for c in calls] == ["run_sql"] and calls[0].arguments == {"sql": "select 1"}
 
 
 class _Fake(BaseHTTPRequestHandler):

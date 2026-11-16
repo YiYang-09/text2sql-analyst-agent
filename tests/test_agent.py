@@ -88,3 +88,15 @@ def test_final_answer_in_same_turn_as_query_is_refused(db):
     )
     res = Agent(llm, db).run("q")
     assert res.answer == "There are 13 years." and res.n_llm_calls == 2
+
+
+def test_empty_result_hint_and_repeat_detection(db):
+    llm = script(
+        Turn("", [call("run_sql", sql="select new_electric from metrics_country_year where geo='de' and year=2024")]),
+        Turn("", [call("run_sql", sql="select new_electric from metrics_country_year where geo='de' and year=2024")]),
+        Turn("", [call("final_answer", query_id="q1", answer="Not available.")]),
+    )
+    res = Agent(llm, db).run("q")
+    tool_steps = [t for t in res.trace if t["type"] == "tool"]
+    assert "returned no rows" in tool_steps[0]["result"]
+    assert "already ran this exact query" in tool_steps[1]["result"] and len(res.queries) == 1

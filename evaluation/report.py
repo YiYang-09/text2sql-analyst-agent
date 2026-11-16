@@ -30,14 +30,14 @@ def pct(x) -> str:
 
 
 def results_table(runs: list[dict]) -> str:
-    lines = ["| Model | Method | Schema | Few-shot | Execution accuracy | 95 % CI | Easy | Medium | Hard "
+    lines = ["| Run | Model | Method | Schema | Few-shot | Execution accuracy | 95 % CI | Easy | Medium | Hard "
              "| Valid SQL | Avg SQL errors | Avg LLM calls | Grounded | Avg latency |",
-             "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+             "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for s in runs:
         c, d = s["config"], s["by_difficulty"]
         lo, hi = s["ci95"]
         lines.append(
-            f"| {c['model']} | {c['mode'].replace('_', '-')} | {c['schema']} | {c['fewshot']} "
+            f"| {s['name']} | {c['model']} | {c['mode'].replace('_', '-')} | {c['schema']} | {c['fewshot']} "
             f"| **{pct(s['execution_accuracy'])}** | {100 * lo:.0f} to {100 * hi:.0f}% "
             f"| {pct(d.get('easy'))} | {pct(d.get('medium'))} | {pct(d.get('hard'))} "
             f"| {pct(s['valid_sql_rate'])} | {s['avg_sql_errors']:.2f} | {s['avg_llm_calls']:.1f} "

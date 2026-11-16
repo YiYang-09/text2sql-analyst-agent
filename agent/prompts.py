@@ -37,7 +37,9 @@ How to work:
 3. Optionally call make_chart on a query result when a chart helps.
 4. Finish by calling final_answer with:
    - query_id: the id of the query whose result IS the answer (its rows are compared with the truth,
-     so return exactly the rows the question asks for: no extra rows, no aggregate rows);
+     so return exactly the rows the question asks for: no extra rows, no aggregate rows). Not a helper
+     query you ran to explore. If the question asks for a list, the result must list the items;
+   - always call final_answer, even when the answer is "not available";
    - answer: 1 to 4 sentences for a business reader.
 
 Rules for the answer text:

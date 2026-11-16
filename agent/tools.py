@@ -93,6 +93,11 @@ class Toolbox:
         if self.retry_budget_spent:
             return ("Retry budget spent: the last queries all failed. Call final_answer now with the best "
                     "successful query, or explain that you could not answer."), True
+        normalized = " ".join(sql.split()).rstrip(";").lower()
+        for prev_id, prev in self.queries.items():
+            if prev.ok and " ".join(prev.sql.split()).rstrip(";").lower() == normalized:
+                return (f"You already ran this exact query as {prev_id}. Use that result, change the query, "
+                        "or call final_answer."), True
         qid = f"q{len(self.queries) + 1}"
         res = self.db.run(sql)
         res.meta["purpose"] = purpose
@@ -103,7 +108,12 @@ class Toolbox:
             left = self.max_sql_failures - self.consecutive_failures
             return f"{qid} failed: {res.error}\n(Fix the query and try again; {left} attempt(s) left.)", True
         self.consecutive_failures = 0
-        return f"{qid}:\n{res.to_markdown()}", False
+        hint = ""
+        if not res.rows:
+            hint = ("\nHint: the query returned no rows. Before concluding that the data is missing, check "
+                    "the filter values (codes are upper case, e.g. 'DE', 'EU27_2020', 'ELC'; call describe_table "
+                    "to see sample values).")
+        return f"{qid}:\n{res.to_markdown()}{hint}", False
 
     def _tool_make_chart(self, query_id: str, kind: str, x: str, y: str, title: str, series: str | None = None) -> tuple[str, bool]:
         res = self.queries.get(query_id)

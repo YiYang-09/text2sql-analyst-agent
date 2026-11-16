@@ -8,8 +8,8 @@ The data is the DuckDB star schema of Eurostat lorry registrations built in my e
 **[EU-Truck-Electrification](https://github.com/YiYang-09/EU-Truck-Electrification)** (data model,
 41 validation checks and a Power BI dashboard). This repository adds the natural-language layer on top.
 
-> Status: stages 1 and 2 (benchmark and agent) are done and tested with a scripted LLM.
-> Model results and the demo are next. Results below will be filled in from `runs/`.
+> Status: benchmark, agent and a first round of local-model results (below) are done.
+> Next: agent v2 (fixes from the failure analysis), an API model as a strong reference, and the demo.
 
 ## What it does
 
@@ -77,19 +77,62 @@ Metrics: execution accuracy with a 95 % Wilson interval, valid-SQL rate, average
 LLM calls per question, grounding rate, latency and tokens. With 63 test questions the 95 % interval is
 about ±12 points around 50 % accuracy and about ±8 points around 85 %, so small differences are reported as such.
 
-### Results
+### Results, round 1 (local models, 2026-11-16)
 
-_To be filled in._
+Local models via Ollama on an RTX 4060 laptop GPU (8 GB), 63 test questions, no few-shot, code at
+commit `661f715`. Accuracy is execution accuracy with a 95 % Wilson interval.
 
-| Model | Method | Schema | Few-shot | Execution accuracy | 95 % CI | Avg SQL errors | Grounded |
-|---|---|---|---|---|---|---|---|
+| Model | Method | Schema | Accuracy | 95 % CI | Valid SQL | Avg LLM calls | Grounded | Avg latency |
+|---|---|---|---|---|---|---|---|---|
+| qwen2.5-coder 7B | single-shot | ddl | 52.4 % | 40 to 64 % | 90.5 % | 1.0 | – | 2.0 s |
+| qwen2.5-coder 7B | single-shot | semantic | **60.3 %** | 48 to 71 % | 82.5 % | 1.0 | – | 2.0 s |
+| qwen2.5-coder 7B | agent | ddl | 49.2 % | 37 to 61 % | 98.4 % | 3.8 | 96.4 % | 13.5 s |
+| qwen2.5-coder 7B | agent | semantic | 54.0 % | 42 to 66 % | 88.9 % | 4.5 | 96.0 % | 10.8 s |
+| qwen2.5-coder 3B | single-shot | ddl | 25.4 % | 16 to 37 % | 68.3 % | 1.0 | – | 1.2 s |
+| qwen2.5-coder 3B | single-shot | semantic | 46.0 % | 34 to 58 % | 69.8 % | 1.0 | – | 1.2 s |
+| qwen2.5-coder 3B | agent | ddl | 23.8 % | 15 to 36 % | 76.2 % | 7.3 | 100 % | 9.9 s |
+| qwen2.5-coder 3B | agent | semantic | 44.4 % | 33 to 57 % | 71.4 % | 5.6 | 95.2 % | 6.2 s |
+
+What the numbers say:
+
+- **The semantic layer is the biggest lever.** It lifts the 3B model by 21 points in single-shot mode
+  (25 % to 46 %, intervals barely overlap) and helps the 7B model by 8 points (within noise). Most of
+  the gain is on the trap questions: 7B single-shot goes from 29 % to 71 % on `trap_aggregate`.
+- **The agent loop does not beat single-shot with these small models.** The differences are inside the
+  intervals for both models. The loop does raise the share of valid SQL (7B, ddl: 90 % to 98 %): it
+  fixes syntax errors, not logic errors.
+- **Grounding works as intended.** 95 % or more of the agent answers contain only numbers that
+  appear in a query result.
+
+### Failure analysis, round 1
+
+**Local models without native tool calling.** `qwen2.5-coder` in Ollama writes tool calls as JSON text
+instead of the tool-call field, so the first agent run executed no SQL at all (0 of 5 in a smoke test,
+including an invented answer). The adapter now parses tool calls from text. The 3B model then wrote
+`{"name": run_sql, ...}` with an unquoted name, which is not valid JSON; with a lenient parser its agent
+accuracy went from 6 % / 3 % to 24 % / 44 %.
+
+Where the 7B agent lost points that single-shot got right (8 questions with ddl, 9 with semantic):
+
+| Pattern | Example |
+|---|---|
+| Points `final_answer` at a helper query | t36: answered "not available" correctly but cited `select count(*) from dim_country ...` |
+| Gives up on an empty result | t27: filtered `geo = 'eu27'` (lower case), got no rows, answered "the data does not provide this" |
+| Picks the wrong column | t05: used `new_electric_share` for a question about lorries *in use* |
+| Right content, wrong shape | t10: answered "2013 to 2025" with `min`/`max` instead of listing the years |
+| Runs out of turns | 7B semantic: 10 of 63 questions hit the 12-turn limit (3B ddl: 31) |
+
+Agent v2 addresses the first three directly: an empty result now comes back with a hint to check
+filter values, a repeated identical query is refused, and the prompt states that `query_id` must be the
+answering query and that `final_answer` is required even for "not available". These changes come from
+reading test-set failures, so v2 results will be reported next to v1, not instead of it.
 
 ## Quick start
 
 ```bash
 pip install -r requirements.txt
 python scripts/build_db.py                 # builds data/trucks.duckdb from data/csv
-python -m pytest -q                        # 40 tests, no API needed
+python -m pytest -q                        # 41 tests, no API needed
 python -m evaluation.run_eval --provider oracle   # pipeline check, must score 100 %
 ```
 

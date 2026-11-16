@@ -78,3 +78,13 @@ def test_chart(db, tmp_path):
     )
     res = Agent(llm, db, AgentConfig(chart_dir=tmp_path)).run("trend?")
     assert len(res.charts) == 1 and (tmp_path / "chart_1.png").exists()
+
+
+def test_final_answer_in_same_turn_as_query_is_refused(db):
+    llm = script(
+        Turn("", [call("run_sql", sql="select count(*) from dim_year"),
+                  call("final_answer", query_id="q1", answer="There are 99 years.")]),
+        Turn("", [call("final_answer", query_id="q1", answer="There are 13 years.")]),
+    )
+    res = Agent(llm, db).run("q")
+    assert res.answer == "There are 13 years." and res.n_llm_calls == 2

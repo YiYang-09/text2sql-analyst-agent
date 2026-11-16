@@ -14,7 +14,7 @@ from typing import Any
 
 from agent.db import Database, QueryResult
 from agent.grounding import GroundingReport
-from agent.llm import LLMClient, Usage
+from agent.llm import LLMClient, ToolResult, Usage
 from agent.prompts import AGENT_SYSTEM, SINGLE_SHOT_SYSTEM, fewshot_block, schema_context
 from agent.tools import TOOL_SPECS, Toolbox, args_preview
 
@@ -43,6 +43,7 @@ class RunResult:
     n_sql_errors: int = 0
     grounding: GroundingReport | None = None
     grounding_rejections: int = 0
+    text_tool_calls: int = 0            # tool calls recovered from plain text (models without native tool calling)
     usage: Usage = field(default_factory=Usage)
     latency_s: float = 0.0
     error: str | None = None
@@ -54,7 +55,7 @@ class RunResult:
             "queries": [q.to_dict() for q in self.queries], "charts": self.charts, "trace": self.trace,
             "n_llm_calls": self.n_llm_calls, "n_sql_errors": self.n_sql_errors,
             "grounding": self.grounding.to_dict() if self.grounding else None,
-            "grounding_rejections": self.grounding_rejections,
+            "grounding_rejections": self.grounding_rejections, "text_tool_calls": self.text_tool_calls,
             "usage": {"input_tokens": self.usage.input_tokens, "output_tokens": self.usage.output_tokens},
             "latency_s": round(self.latency_s, 3), "error": self.error,
         }
@@ -76,6 +77,7 @@ class Agent:
         box = Toolbox(db=self.db, question=question, chart_dir=cfg.chart_dir,
                       max_sql_failures=cfg.max_sql_failures, grounding_retries=cfg.grounding_retries)
         t0 = time.perf_counter()
+        session = None
         try:
             session = self.llm.start(self.system_prompt(), TOOL_SPECS)
             turn = session.send_user(question)
@@ -99,10 +101,17 @@ class Agent:
                     turn = session.send_user("Use the tools to answer, and finish by calling final_answer.")
                     continue
                 results = []
+                ran_sql = False
                 for call in turn.tool_calls:
                     if box.final is not None:  # ignore calls after an accepted final answer
                         break
-                    r = box.execute(call)
+                    if call.name == "final_answer" and ran_sql:
+                        # Do not accept an answer written before the model has seen the query result.
+                        r = ToolResult(call.id, "Read the query result first, then call final_answer "
+                                                "in your next message.", is_error=True)
+                    else:
+                        r = box.execute(call)
+                    ran_sql = ran_sql or call.name == "run_sql"
                     results.append(r)
                     out.trace.append({"type": "tool", "name": call.name, "args": args_preview(call.arguments),
                                       "is_error": r.is_error, "result": r.content[:2000]})
@@ -120,6 +129,7 @@ class Agent:
         out.charts = box.charts
         out.n_sql_errors = box.n_sql_errors
         out.grounding_rejections = box.grounding_rejections
+        out.text_tool_calls = getattr(session, "n_text_tool_calls", 0)
         if box.final is not None:
             out.status = "answered"
             out.answer = box.final.answer

@@ -24,6 +24,11 @@ question ─▶ LLM ─▶ tool calls ──────────────
 - **Native tool calling, no agent framework.** The loop in `agent/agent.py` is under 100 lines.
 - **Provider-agnostic.** One interface, two adapters: any OpenAI-compatible API (Ollama, DeepSeek,
   Gemini, Groq, OpenRouter, OpenAI) and Anthropic Claude. Switch with an environment variable.
+- **Works with models that lack native tool calling.** Some local models (for example
+  `qwen2.5-coder` in Ollama) write tool calls as JSON text. The OpenAI-compatible adapter recovers
+  them from the text and returns tool results as a user message; runs record how often this happened.
+- **No blind answers.** A `final_answer` sent in the same turn as a new query is refused: the model
+  must read the result first.
 - **Safe SQL.** The database is opened read-only with external file access disabled, and a guard
   accepts only a single `SELECT` statement and blocks file-reading table functions. Results are
   capped at 500 rows and queries time out after 15 seconds.
@@ -84,7 +89,7 @@ _To be filled in._
 ```bash
 pip install -r requirements.txt
 python scripts/build_db.py                 # builds data/trucks.duckdb from data/csv
-python -m pytest -q                        # 36 tests, no API needed
+python -m pytest -q                        # 40 tests, no API needed
 python -m evaluation.run_eval --provider oracle   # pipeline check, must score 100 %
 ```
 

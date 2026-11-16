@@ -94,6 +94,8 @@ class OpenAICompatSession:
     def __init__(self, client: OpenAICompatClient, system: str, tools: list[ToolSpec] | None):
         self.c = client
         self.messages: list[dict] = [{"role": "system", "content": system}]
+        self.pending_text_calls = False
+        self.n_text_tool_calls = 0
         self.tools = [
             {"type": "function", "function": {"name": t.name, "description": t.description, "parameters": t.parameters}}
             for t in (tools or [])
@@ -111,6 +113,13 @@ class OpenAICompatSession:
         msg = resp.choices[0].message
         assistant: dict[str, Any] = {"role": "assistant", "content": msg.content or ""}
         calls: list[ToolCall] = []
+        self.pending_text_calls = False
+        if not msg.tool_calls and self.tools:
+            # Some local models (for example qwen2.5-coder in Ollama) write tool calls as JSON text
+            # instead of using the tool-call field. Recover them so the loop can continue.
+            calls = parse_text_tool_calls(msg.content or "", {t["function"]["name"] for t in self.tools})
+            self.pending_text_calls = bool(calls)
+            self.n_text_tool_calls += len(calls)
         if msg.tool_calls:
             assistant["tool_calls"] = [
                 {"id": tc.id, "type": "function", "function": {"name": tc.function.name, "arguments": tc.function.arguments}}
@@ -130,12 +139,45 @@ class OpenAICompatSession:
         return self._call()
 
     def send_tool_results(self, results: list[ToolResult], extra_user_text: str | None = None) -> Turn:
+        if self.pending_text_calls:
+            # The calls came from plain text, so there are no tool-call ids in the history to answer.
+            # Return the results as a user message instead.
+            parts = [("ERROR: " if r.is_error else "") + r.content for r in results]
+            text = "Tool results:\n\n" + "\n\n".join(parts)
+            if extra_user_text:
+                text += "\n\n" + extra_user_text
+            self.messages.append({"role": "user", "content": text})
+            return self._call()
         for r in results:
             content = ("ERROR: " + r.content) if r.is_error else r.content
             self.messages.append({"role": "tool", "tool_call_id": r.call_id, "content": content})
         if extra_user_text:
             self.messages.append({"role": "user", "content": extra_user_text})
         return self._call()
+
+
+def parse_text_tool_calls(text: str, tool_names: set[str]) -> list[ToolCall]:
+    """Find JSON objects like {"name": "run_sql", "arguments": {...}} in free text."""
+    calls: list[ToolCall] = []
+    decoder = json.JSONDecoder()
+    i = 0
+    while True:
+        i = text.find("{", i)
+        if i < 0:
+            break
+        try:
+            obj, end = decoder.raw_decode(text, i)
+        except json.JSONDecodeError:
+            i += 1
+            continue
+        if isinstance(obj, dict) and obj.get("name") in tool_names:
+            args = obj.get("arguments", obj.get("parameters", {}))
+            parsed, err = _parse_args(args)
+            calls.append(ToolCall(id=f"text_call_{len(calls) + 1}", name=obj["name"], arguments=parsed, parse_error=err))
+            i = end
+        else:
+            i += 1
+    return calls
 
 
 def _parse_args(raw: str | dict | None) -> tuple[dict, str | None]:

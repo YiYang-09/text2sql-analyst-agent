@@ -309,9 +309,28 @@ PRESETS: dict[str, dict[str, str | None]] = {
 ANTHROPIC_DEFAULT_MODEL = "claude-opus-5-5"
 
 
+def load_dotenv(path: "os.PathLike | str | None" = None) -> None:
+    """Read KEY=VALUE lines from .env in the repo root into os.environ (existing variables win)."""
+    import pathlib
+
+    path = pathlib.Path(path) if path else pathlib.Path(__file__).resolve().parents[1] / ".env"
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key, value = key.strip(), value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
 def make_client(provider: str | None = None, model: str | None = None, base_url: str | None = None,
                 api_key: str | None = None) -> LLMClient:
-    """Build a client from arguments or environment variables LLM_PROVIDER, LLM_MODEL, LLM_BASE_URL, LLM_API_KEY."""
+    """Build a client from arguments or environment variables LLM_PROVIDER, LLM_MODEL, LLM_BASE_URL, LLM_API_KEY.
+    A .env file in the repo root is read first (it is git-ignored)."""
+    load_dotenv()
     provider = (provider or os.getenv("LLM_PROVIDER") or "ollama").lower()
     model = model or os.getenv("LLM_MODEL")
     base_url = base_url or os.getenv("LLM_BASE_URL")

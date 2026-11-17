@@ -81,3 +81,14 @@ def test_text_tool_calls_fallback(db, fake_server):
     assert res.status == "answered" and res.final_query.rows == [(2978,)]
     last = _Fake.requests[1]["messages"][-1]
     assert last["role"] == "user" and "2978" in last["content"]
+
+
+def test_load_dotenv(tmp_path, monkeypatch):
+    from agent.llm import load_dotenv
+    env = tmp_path / ".env"
+    env.write_text('﻿# comment\nGEMINI_API_KEY="abc"\nLLM_PROVIDER=gemini\n', encoding="utf-8")
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setenv("LLM_PROVIDER", "ollama")
+    load_dotenv(env)
+    import os
+    assert os.environ["GEMINI_API_KEY"] == "abc" and os.environ["LLM_PROVIDER"] == "ollama"

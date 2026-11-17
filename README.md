@@ -8,8 +8,8 @@ The data is the DuckDB star schema of Eurostat lorry registrations built in my e
 **[EU-Truck-Electrification](https://github.com/YiYang-09/EU-Truck-Electrification)** (data model,
 41 validation checks and a Power BI dashboard). This repository adds the natural-language layer on top.
 
-> Status: benchmark, agent and a first round of local-model results (below) are done.
-> Next: agent v2 (fixes from the failure analysis), an API model as a strong reference, and the demo.
+> Status: benchmark, agent, Streamlit demo and two rounds of local-model results (below) are done.
+> Next: an API model with native tool calling as a strong reference, and a hosted demo.
 
 ## What it does
 
@@ -126,6 +126,25 @@ Agent v2 addresses the first three directly: an empty result now comes back with
 filter values, a repeated identical query is refused, and the prompt states that `query_id` must be the
 answering query and that `final_answer` is required even for "not available". These changes come from
 reading test-set failures, so v2 results will be reported next to v1, not instead of it.
+
+### Round 2: agent v2 (2026-11-17)
+
+Same models, questions and settings; agent code at `42c0c60` (run at `89b00ce`).
+
+| Model | Schema | Agent v1 | Agent v2 | 95 % CI (v2) | Hit turn limit v1 → v2 | Single-shot |
+|---|---|---|---|---|---|---|
+| qwen2.5-coder 7B | ddl | 49.2 % | 52.4 % | 40 to 64 % | 6 → 2 | 52.4 % |
+| qwen2.5-coder 7B | semantic | 54.0 % | 50.8 % | 39 to 63 % | 10 → 7 | 60.3 % |
+| qwen2.5-coder 3B | ddl | 23.8 % | 28.6 % | 19 to 41 % | 31 → 33 | 25.4 % |
+| qwen2.5-coder 3B | semantic | 44.4 % | 44.4 % | 33 to 57 % | 21 → 21 | 46.0 % |
+
+**No measurable improvement.** v2 fixed most of the targeted failures (t05 and t36 now pass in both
+schemas, t27 and t10 in one), and the 7B model runs out of turns less often. But in every configuration
+v2 also got a similar number of other questions newly wrong (for example 7B ddl: 5 newly right, 3 newly
+wrong), and all changes are well inside the intervals. With 7B-class models the bottleneck is the
+model, not the loop: question-level results move between runs by about as much as the fixes gain.
+The next step is a stronger model with native tool calling, to see whether the loop helps when the
+model can use it.
 
 ## Quick start
 

@@ -85,7 +85,9 @@ class OpenAICompatClient:
         self.model = model
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.client = OpenAI(base_url=base_url, api_key=api_key or "not-needed", timeout=timeout_s, max_retries=2)
+        # Free tiers return 429/503 often; the SDK retries those with exponential backoff.
+        retries = int(os.getenv("LLM_MAX_RETRIES", "6"))
+        self.client = OpenAI(base_url=base_url, api_key=api_key or "not-needed", timeout=timeout_s, max_retries=retries)
 
     def start(self, system: str, tools: list[ToolSpec] | None = None) -> "OpenAICompatSession":
         return OpenAICompatSession(self, system, tools)
@@ -300,7 +302,7 @@ class ScriptedSession:
 PRESETS: dict[str, dict[str, str | None]] = {
     "ollama": {"base_url": "http://localhost:11434/v1", "model": "qwen2.5-coder:7b", "key_env": None},
     "deepseek": {"base_url": "https://api.deepseek.com", "model": "deepseek-chat", "key_env": "DEEPSEEK_API_KEY"},
-    "gemini": {"base_url": "https://generativelanguage.googleapis.com/v1beta/openai/", "model": "gemini-2.5-flash",
+    "gemini": {"base_url": "https://generativelanguage.googleapis.com/v1beta/openai/", "model": "gemini-3.5-flash",
                "key_env": "GEMINI_API_KEY"},
     "groq": {"base_url": "https://api.groq.com/openai/v1", "model": "llama-3.3-70b-versatile", "key_env": "GROQ_API_KEY"},
     "openrouter": {"base_url": "https://openrouter.ai/api/v1", "model": None, "key_env": "OPENROUTER_API_KEY"},

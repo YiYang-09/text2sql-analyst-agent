@@ -145,12 +145,19 @@ python -m evaluation.run_eval --provider ollama --model qwen2.5-coder:7b --mode 
 python -m evaluation.run_eval --provider ollama --model qwen2.5-coder:7b --mode single_shot
 ```
 
+Web UI (live questions, or replay of recorded benchmark runs with the gold answer side by side):
+
+```bash
+streamlit run app.py
+```
+
 Any other provider: set `LLM_PROVIDER` (`ollama`, `deepseek`, `gemini`, `groq`, `openrouter`,
 `openai`, `anthropic`, `openai-compatible`), `LLM_MODEL`, and the provider's key. See `.env.example`.
 
 ## Repository layout
 
 ```
+app.py        Streamlit demo: live mode and replay of recorded runs
 agent/        llm.py (provider adapters), agent.py (loop + single-shot baseline), tools.py,
               db.py (read-only DuckDB + SQL guard), grounding.py, prompts.py, charts.py, cli.py
 bench/        questions.yaml (benchmark with gold SQL)

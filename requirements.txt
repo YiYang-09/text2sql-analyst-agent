@@ -3,4 +3,6 @@ pyyaml>=6.0
 matplotlib>=3.8
 openai>=1.40      # OpenAI-compatible providers: Ollama, DeepSeek, Gemini, Groq, ...
 anthropic>=0.40   # Claude
+streamlit>=1.40    # demo UI (app.py)
+pandas>=2.0
 pytest>=8.0
